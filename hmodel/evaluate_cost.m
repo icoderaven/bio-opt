@@ -4,6 +4,7 @@ function [ cost] = evaluate_cost( torque_trajectory , target,lambda, step_interv
 %Use a time series
 %Linearly interpolate between provided points
 ts = ref_taus;
+torque_trajectory= reshape(torque_trajectory, numel(torque_trajectory)/3,3);
 ts.data = interp1(ts.time(1:step_interval:end), torque_trajectory, ts.time, 'pchip');
 
 if nargin==5
