@@ -4,7 +4,7 @@ function [ cost] = evaluate_cost( torque_trajectory , target,lambda, step_interv
 %Use a time series
 %Linearly interpolate between provided points
 ts = ref_taus;
-ts.data = interp1(ts.time(1:step_interval:end), torque_trajectory, ts.time, 'pchip');
+ts.signals.values = interp1(ts.time(1:step_interval:end), torque_trajectory, ts.time, 'pchip');
 
 if nargin==5
     input_trajectory_name='torque_trajectories';
@@ -31,17 +31,17 @@ sim('arm_model');
 % trajectory = evalin('base', 'trajectory');
 % end_pos = evalin('base', 'end_pos');
 
-end_pos.data(end, :)
-if size(taus.data,1) < size(ref_taus.data,1)
+end_pos.signals.values(end, :)
+if size(taus.signals.values,1) < size(ref_taus.signals.values,1)
     display '!'
-    cost = 1e13*norm(size(taus.data,1) - size(ref_taus.data,1));
+    cost = 1e13*norm(size(taus.signals.values,1) - size(ref_taus.signals.values,1));
 else
-    angles = trajectory.data;
-    positions = end_pos.data;
+    angles = trajectory.signals.values;
+    positions = end_pos.signals.values;
     dt = ts.time(2) - ts.time(1);
     
     %Find the derivative of the commanded torques
-    us = diff(taus.data)./dt;
+    us = diff(taus.signals.values)./dt;
     
     %Expressing the cost function as
     % u'*u + \lambda*||x_f - x(t_f) \\_2 + \psi ||v(t_f)||
@@ -49,7 +49,7 @@ else
 %     lambda*norm(end_pos.data(end,:) - target)
 %     lambda * norm(positions(end,:) - positions(end-1,:))/dt
 %     sum(u_val(:))
-    cost = sum(u_val(:)) + lambda*norm(end_pos.data(end,:) - target) + lambda * norm(positions(end,:) - positions(end-1,:))/dt;
+    cost = sum(u_val(:)) + lambda*norm(end_pos.signals.values(end,:) - target) + lambda * norm(positions(end,:) - positions(end-1,:))/dt;
     
 end
 end
