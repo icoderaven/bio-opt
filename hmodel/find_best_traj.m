@@ -19,5 +19,5 @@ ref_taus = taus;
 % seed_traj = zeros(11,3);
 % best_traj = fminsearch(@(x) evaluate_cost(x, target, lambda, step_interval, ref_taus), seed_traj, options)
  
-saoptions = saoptimset('Display', 'iter', 'PlotFcns', @saplotbestf);
+saoptions = saoptimset('Display', 'iter', 'PlotFcns', @saplotbestx);
 best_traj=simulannealbnd(@(x) evaluate_cost(x, target, lambda, step_interval, ref_taus), seed_traj, lb, ub, saoptions);

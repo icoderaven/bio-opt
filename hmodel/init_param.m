@@ -15,3 +15,4 @@ dest = find_ik_solution(target,[L1,L2]);
 %Call muscle parameters
 muscleParams;
 % sim('arm_model_pid');  
+last_best_cost = 1e15;
