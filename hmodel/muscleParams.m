@@ -45,3 +45,10 @@ phi23_UpLimit  = 155*pi/180; %[rad]
 c_jointstop     = 0.3 / (pi/180);  %[Nm/rad]
 % soft block maximum joint stop relaxation speed
 w_max_jointstop = 1 * pi/180; %[rad/s]
+
+
+% VAStus group attachement
+rVAS       =       0.03; % [m]   constant lever contribution 
+phimaxVAS  = 90*pi/180; % [rad] angle of maximum lever contribution (From http://elibrary.rajavithi.go.th/homelibrary/EBook_data/page29/Operative%20Elbow%20Surgery/3.pdf)
+phirefVAS  = 60*pi/180; % [rad] reference angle at which MTU length equals 
+rhoVAS     =        3;;%0.7; %       sum of lopt and lslack 

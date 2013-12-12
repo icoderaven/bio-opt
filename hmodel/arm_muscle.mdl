@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.30"
+    ComputedModelVersion    "1.35"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -31,7 +31,7 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [1913.0, 24.0, 1970.0, 1313.0]
+      Location		      [2066.0, 340.0, 1579.0, 928.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -50,31 +50,40 @@ Model {
       }
       Array {
 	Type			"Simulink.EditorInfo"
-	Dimension		2
+	Dimension		3
 	Object {
 	  $ObjectID		  5
 	  IsActive		  [0]
-	  ViewObjType		  "SimulinkTopLevel"
-	  LoadSaveID		  "0"
-	  Extents		  [1723.0, 1129.0]
-	  ZoomFactor		  [1.0]
-	  Offset		  [-85.299999999999955, -72.2000000000001]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "142"
+	  Extents		  [1332.0, 744.0]
+	  ZoomFactor		  [1.25]
+	  Offset		  [0.0, 0.0]
 	}
 	Object {
 	  $ObjectID		  6
+	  IsActive		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "1"
+	  Extents		  [1332.0, 744.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [25.209602513681943, 27.293788763316563]
+	}
+	Object {
+	  $ObjectID		  7
 	  IsActive		  [1]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "162"
-	  Extents		  [1723.0, 1129.0]
-	  ZoomFactor		  [1.0]
-	  Offset		  [0.0, 0.0]
+	  Extents		  [1332.0, 744.0]
+	  ZoomFactor		  [0.8]
+	  Offset		  [118.18397443760284, 205.48861227348971]
 	}
 	PropName		"EditorsInfo"
       }
     }
   }
-  PhysicalModelingChecksum "2784433201"
-  PhysicalModelingParameterChecksum "4024725551"
+  PhysicalModelingChecksum "4229268312"
+  PhysicalModelingParameterChecksum "1301414655"
   PhysicalModelingProducts "SimMechanics"
   Created		  "Thu Oct 10 13:21:29 2013"
   Creator		  "hgeyer"
@@ -82,9 +91,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "icoderaven"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Wed Dec 04 12:12:26 2013"
-  RTWModifiedTimeStamp	  308059944
-  ModelVersionFormat	  "1.%<AutoIncrement:30>"
+  LastModifiedDate	  "Thu Dec 12 13:14:58 2013"
+  RTWModifiedTimeStamp	  308754897
+  ModelVersionFormat	  "1.%<AutoIncrement:35>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -119,7 +128,7 @@ Model {
   TryForcingSFcnDF	  off
   Object {
     $PropName		    "DataLoggingOverride"
-    $ObjectID		    7
+    $ObjectID		    8
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
     model_		    "muscle"
     signals_		    []
@@ -179,16 +188,16 @@ Model {
     Type		    "Handle"
     Dimension		    1
     Simulink.ConfigSet {
-      $ObjectID		      8
+      $ObjectID		      9
       Version		      "1.13.0"
       Array {
 	Type			"Handle"
 	Dimension		9
 	Simulink.SolverCC {
-	  $ObjectID		  9
+	  $ObjectID		  10
 	  Version		  "1.13.0"
 	  StartTime		  "0.0"
-	  StopTime		  "5"
+	  StopTime		  "10"
 	  AbsTol		  "auto"
 	  FixedStep		  "1e-2"
 	  InitialStep		  "auto"
@@ -220,7 +229,7 @@ Model {
 	  InsertRTBMode		  "Whenever possible"
 	}
 	Simulink.DataIOCC {
-	  $ObjectID		  10
+	  $ObjectID		  11
 	  Version		  "1.13.0"
 	  Decimation		  "1"
 	  ExternalInput		  "[t, u]"
@@ -252,7 +261,7 @@ Model {
 	  Refine		  "1"
 	}
 	Simulink.OptimizationCC {
-	  $ObjectID		  11
+	  $ObjectID		  12
 	  Version		  "1.13.0"
 	  Array {
 	    Type		    "Cell"
@@ -308,7 +317,7 @@ Model {
 	  ParallelExecutionInRapidAccelerator on
 	}
 	Simulink.DebuggingCC {
-	  $ObjectID		  12
+	  $ObjectID		  13
 	  Version		  "1.13.0"
 	  RTPrefix		  "error"
 	  ConsistencyChecking	  "none"
@@ -398,7 +407,7 @@ Model {
 	  SFTransitionActionBeforeConditionDiag	"warning"
 	}
 	Simulink.HardwareCC {
-	  $ObjectID		  13
+	  $ObjectID		  14
 	  Version		  "1.13.0"
 	  ProdBitPerChar	  8
 	  ProdBitPerShort	  16
@@ -439,7 +448,7 @@ Model {
 	  ProdEqTarget		  on
 	}
 	Simulink.ModelReferenceCC {
-	  $ObjectID		  14
+	  $ObjectID		  15
 	  Version		  "1.13.0"
 	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
 	  CheckModelReferenceTargetMessage "error"
@@ -454,7 +463,7 @@ Model {
 	  SupportModelReferenceSimTargetCustomCode off
 	}
 	Simulink.SFSimCC {
-	  $ObjectID		  15
+	  $ObjectID		  16
 	  Version		  "1.13.0"
 	  SFSimEnableDebug	  on
 	  SFSimOverflowDetection  on
@@ -469,7 +478,7 @@ Model {
 	}
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
-	  $ObjectID		  16
+	  $ObjectID		  17
 	  Version		  "1.13.0"
 	  Array {
 	    Type		    "Cell"
@@ -539,7 +548,7 @@ Model {
 	    Type		    "Handle"
 	    Dimension		    2
 	    Simulink.CodeAppCC {
-	      $ObjectID		      17
+	      $ObjectID		      18
 	      Version		      "1.13.0"
 	      Array {
 		Type			"Cell"
@@ -607,7 +616,7 @@ Model {
 	    }
 	    Simulink.GRTTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
-	      $ObjectID		      18
+	      $ObjectID		      19
 	      Version		      "1.13.0"
 	      Array {
 		Type			"Cell"
@@ -689,7 +698,7 @@ Model {
 	  }
 	}
 	SSC.SimscapeCC {
-	  $ObjectID		  19
+	  $ObjectID		  20
 	  Version		  "1.0"
 	  Array {
 	    Type		    "Cell"
@@ -701,7 +710,7 @@ Model {
 	    Type		    "Handle"
 	    Dimension		    2
 	    MECH.SimMechanicsCC {
-	      $ObjectID		      20
+	      $ObjectID		      21
 	      Version		      "1.13.0"
 	      Name		      "SimMechanics"
 	      WarnOnRedundantConstraints on
@@ -734,14 +743,14 @@ Model {
 	      OVRRIDBodyVisualizationType "NONE"
 	    }
 	    simmechanics.ConfigurationSet {
-	      $ObjectID		      21
+	      $ObjectID		      22
 	      Version		      "1.13.0"
 	      Description	      "SimMechanics 2G"
 	      Array {
 		Type			"Handle"
 		Dimension		2
 		simmechanics.DiagnosticsConfigSet {
-		  $ObjectID		  22
+		  $ObjectID		  23
 		  Version		  "1.13.0"
 		  Description		  "Diagnostics"
 		  Name			  "DiagnosticsConfigSet"
@@ -755,7 +764,7 @@ Model {
 		  SimMechanicsJointTargetOverSpecification "error"
 		}
 		simmechanics.ExplorerConfigSet {
-		  $ObjectID		  23
+		  $ObjectID		  24
 		  Version		  "1.13.0"
 		  Description		  "Explorer"
 		  Name			  "ExplorerConfigSet"
@@ -782,17 +791,17 @@ Model {
       }
       Name		      "Configuration"
       CurrentDlgPage	      "Solver"
-      ConfigPrmDlgPosition     [ 2333, 361, 3426, 799 ] 
+      ConfigPrmDlgPosition     [ 2325, 333, 3434, 807 ] 
     }
     PropName		    "ConfigurationSets"
   }
   Simulink.ConfigSet {
     $PropName		    "ActiveConfigurationSet"
-    $ObjectID		    8
+    $ObjectID		    9
   }
   Object {
     $PropName		    "DataTransfer"
-    $ObjectID		    24
+    $ObjectID		    25
     $ClassName		    "Simulink.GlobalDataTransfer"
     DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
     DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
@@ -886,15 +895,6 @@ Model {
       BlockType		      Fcn
       Expr		      "sin(u[1])"
       SampleTime	      "-1"
-    }
-    Block {
-      BlockType		      FromWorkspace
-      VariableName	      "simulink_input"
-      OutDataTypeStr	      "Inherit: auto"
-      SampleTime	      "-1"
-      Interpolate	      on
-      ZeroCross		      off
-      OutputAfterFinalValue   "Extrapolation"
     }
     Block {
       BlockType		      Gain
@@ -1079,11 +1079,19 @@ Model {
       FixptAsFi		      off
       NumInputs		      "1"
     }
+    Block {
+      BlockType		      Trigonometry
+      Operator		      "sin"
+      ApproximationMethod     "None"
+      NumberOfIterations      "11"
+      OutputSignalType	      "auto"
+      SampleTime	      "-1"
+    }
   }
   System {
     Name		    "arm_muscle"
-    Location		    [1913, 24, 3883, 1337]
-    Open		    on
+    Location		    [2066, 340, 3645, 1268]
+    Open		    off
     ModelBrowserVisibility  on
     ModelBrowserWidth	    200
     ScreenColor		    "white"
@@ -1096,7 +1104,7 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "171"
+    SIDHighWatermark	    "310"
     Block {
       BlockType		      ToWorkspace
       Name		      "Actual Torques on the Arm"
@@ -1157,22 +1165,11 @@ Model {
       SaveFormat	      "Timeseries"
     }
     Block {
-      BlockType		      FromWorkspace
-      Name		      "From\nWorkspace"
-      SID		      "171"
-      Position		      [240, 223, 390, 247]
-      ZOrder		      68
-      VariableName	      "stim_trajectories"
-      SampleTime	      "0"
-      ZeroCross		      on
-      OutputAfterFinalValue   "Holding final value"
-    }
-    Block {
       BlockType		      SubSystem
       Name		      "Subsystem"
       SID		      "162"
       Ports		      [1, 2]
-      Position		      [485, 204, 740, 266]
+      Position		      [400, 194, 655, 256]
       ZOrder		      22
       MinAlgLoopOccurrences   off
       PropExecContextOutsideSubsystem off
@@ -1183,7 +1180,7 @@ Model {
       MaskHideContents	      off
       System {
 	Name			"Subsystem"
-	Location		[1913, 24, 3883, 1337]
+	Location		[2066, 340, 3645, 1268]
 	Open			on
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
@@ -1195,7 +1192,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"100"
+	ZoomFactor		"80"
 	Block {
 	  BlockType		  Inport
 	  Name			  "Stimulation"
@@ -1204,6 +1201,36 @@ Model {
 	  ZOrder		  47
 	  BackgroundColor	  "green"
 	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Biceps\nActuator"
+	  SID			  "111"
+	  Ports			  [1, 0, 0, 0, 0, 0, 1]
+	  Position		  [340, 526, 380, 564]
+	  ZOrder		  27
+	  BlockMirror		  on
+	  LibraryVersion	  "1.1"
+	  SourceBlock		  "mblibv1/Sensors & \nActuators/Joint Actuator"
+	  SourceType		  "Joint Actuator"
+	  UpdateFromCAD		  "off"
+	  PhysicalDomain	  "Mechanical"
+	  PortType		  "blob"
+	  ActuationStyle	  "Force"
+	  AngleUnits		  "deg"
+	  ArcVelocityUnits	  "deg/s"
+	  ArcAccelerationUnits	  "deg/s^2"
+	  CoordPositionUnits	  "m"
+	  VelocityUnits		  "m/s"
+	  AccelerationUnits	  "m/s^2"
+	  ForceUnits		  "N"
+	  TorqueUnits		  "N-m"
+	  ActiveIO		  "on"
+	  Width			  "1"
+	  ClassName		  "JointActuator"
+	  DialogClass		  "MechanicalActuatorBlock"
+	  Primitive		  "R1"
+	  ReferenceFrame	  "Absolute (INERTIAL)"
 	}
 	Block {
 	  BlockType		  Reference
@@ -1245,6 +1272,18 @@ Model {
 	}
 	Block {
 	  BlockType		  Demux
+	  Name			  "Demux"
+	  SID			  "310"
+	  Ports			  [1, 3]
+	  Position		  [1556, 460, 1594, 465]
+	  ZOrder		  58
+	  BlockRotation		  270
+	  ShowName		  off
+	  Outputs		  "3"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Demux
 	  Name			  "Demux1"
 	  SID			  "139"
 	  Ports			  [1, 2]
@@ -1259,35 +1298,8 @@ Model {
 	  DisplayOption		  "bar"
 	}
 	Block {
-	  BlockType		  Reference
-	  Name			  "Ground"
-	  SID			  "104"
-	  Ports			  [0, 0, 0, 0, 0, 1, 1]
-	  Position		  [245, 135, 285, 175]
-	  ZOrder		  36
-	  BlockRotation		  270
-	  BlockMirror		  on
-	  NamePlacement		  "alternate"
-	  LibraryVersion	  "1.1"
-	  UserDataPersistent	  on
-	  UserData		  "DataTag0"
-	  SourceBlock		  "mblibv1/Bodies/Ground"
-	  SourceType		  "Ground"
-	  UpdateFromCAD		  "off"
-	  LeftPortType		  "env"
-	  RightPortType		  "workingframe"
-	  PhysicalDomain	  "Mechanical"
-	  DialogClass		  "GroundBlock"
-	  ClassName		  "Ground"
-	  CoordPosition		  "[0 0 0]"
-	  CoordPositionUnits	  "m"
-	  StateVectorMgrId	  "0"
-	  MachineId		  "[1 0]"
-	  ShowEnvPort		  on
-	}
-	Block {
 	  BlockType		  SubSystem
-	  Name			  "L Knee Joint Limits"
+	  Name			  "Elbow Joint Limits"
 	  SID			  "142"
 	  Ports			  [2, 1]
 	  Position		  [800, 780, 865, 840]
@@ -1302,9 +1314,9 @@ Model {
 	  RequestExecContextInheritance	off
 	  MaskHideContents	  off
 	  System {
-	    Name		    "L Knee Joint Limits"
-	    Location		    [1913, 24, 3883, 1337]
-	    Open		    off
+	    Name		    "Elbow Joint Limits"
+	    Location		    [2016, 186, 3595, 1114]
+	    Open		    on
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -1387,7 +1399,7 @@ Model {
 	      SourceBlock	      "simulink/Logic and Bit\nOperations/Interval Test"
 	      SourceType	      "Interval Test"
 	      IntervalClosedRight     on
-	      uplimit		      "185*pi/180"
+	      uplimit		      "160*pi/180"
 	      IntervalClosedLeft      on
 	      lowlimit		      "0*pi/180"
 	      OutDataTypeStr	      "boolean"
@@ -1555,34 +1567,65 @@ Model {
 	  }
 	}
 	Block {
+	  BlockType		  Scope
+	  Name			  "F and T"
+	  SID			  "174"
+	  Ports			  [2]
+	  Position		  [630, 656, 660, 689]
+	  ZOrder		  51
+	  Floating		  off
+	  Location		  [1170, 648, 1833, 1086]
+	  Open			  on
+	  NumInputPorts		  "2"
+	  List {
+	    ListType		    AxesTitles
+	    axes1		    "%<SignalLabel>"
+	    axes2		    "%<SignalLabel>"
+	  }
+	  List {
+	    ListType		    ScopeGraphics
+	    FigureColor		    "[0.501960784313725 0.501960784313725 0.501960784313725]"
+	    AxesColor		    "[0 0 0]"
+	    AxesTickColor	    "[1 1 1]"
+	    LineColors		    "[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]"
+	    LineStyles		    "-|-|-|-|-|-"
+	    LineWidths		    "[0.5 0.5 0.5 0.5 0.5 0.5]"
+	    MarkerStyles	    "none|none|none|none|none|none"
+	  }
+	  ShowLegends		  off
+	  YMin			  "-5~-5"
+	  YMax			  "5~5"
+	  SaveName		  "ScopeData3"
+	  DataFormat		  "StructureWithTime"
+	  LimitDataPoints	  off
+	  SampleTime		  "0"
+	}
+	Block {
 	  BlockType		  Reference
-	  Name			  "Left Hip\nActuator"
-	  SID			  "111"
-	  Ports			  [1, 0, 0, 0, 0, 0, 1]
-	  Position		  [340, 526, 380, 564]
-	  ZOrder		  27
+	  Name			  "Ground"
+	  SID			  "104"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [245, 135, 285, 175]
+	  ZOrder		  36
+	  BlockRotation		  270
 	  BlockMirror		  on
+	  NamePlacement		  "alternate"
 	  LibraryVersion	  "1.1"
-	  SourceBlock		  "mblibv1/Sensors & \nActuators/Joint Actuator"
-	  SourceType		  "Joint Actuator"
+	  UserDataPersistent	  on
+	  UserData		  "DataTag0"
+	  SourceBlock		  "mblibv1/Bodies/Ground"
+	  SourceType		  "Ground"
 	  UpdateFromCAD		  "off"
+	  LeftPortType		  "env"
+	  RightPortType		  "workingframe"
 	  PhysicalDomain	  "Mechanical"
-	  PortType		  "blob"
-	  ActuationStyle	  "Force"
-	  AngleUnits		  "deg"
-	  ArcVelocityUnits	  "deg/s"
-	  ArcAccelerationUnits	  "deg/s^2"
+	  DialogClass		  "GroundBlock"
+	  ClassName		  "Ground"
+	  CoordPosition		  "[0 0 0]"
 	  CoordPositionUnits	  "m"
-	  VelocityUnits		  "m/s"
-	  AccelerationUnits	  "m/s^2"
-	  ForceUnits		  "N"
-	  TorqueUnits		  "N-m"
-	  ActiveIO		  "on"
-	  Width			  "1"
-	  ClassName		  "JointActuator"
-	  DialogClass		  "MechanicalActuatorBlock"
-	  Primitive		  "R1"
-	  ReferenceFrame	  "Absolute (INERTIAL)"
+	  StateVectorMgrId	  "3"
+	  MachineId		  "[4 0]"
+	  ShowEnvPort		  on
 	}
 	Block {
 	  BlockType		  Reference
@@ -1654,15 +1697,15 @@ Model {
 	  PhysicalDomain	  "mechanical"
 	  ClassName		  "InitialCondition"
 	  DialogClass		  "InitialConditionBlock"
-	  InitialConditions	  "P1$false$0$m$rad$0$m/s$rad/s#P2$false$0$m$rad$0$m/s$rad/s#P3$false$0$m$rad$0$m/s$rad/s#R1$true"
-	  "$90*pi/180$m$rad$0$m/s$rad/s#R2$false$0$m$rad$0$m/s$rad/s#R3$false$0$m$rad$0$m/s$rad/s#S$false$0$m$rad$0$m/s$rad/s"
+	  InitialConditions	  "P1$false$0$m$rad$0$m/s$rad/s#P2$false$0$m$rad$0$m/s$rad/s#P3$false$0$m$rad$0$m/s$rad/s#R1$fals"
+	  "e$90*pi/180$m$rad$0$m/s$rad/s#R2$false$0$m$rad$0$m/s$rad/s#R3$false$0$m$rad$0$m/s$rad/s#S$false$0$m$rad$0$m/s$rad/s"
 	  P1PIC			  "0"
 	  P1VIC			  "0"
 	  P2PIC			  "0"
 	  P2VIC			  "0"
 	  P3PIC			  "0"
 	  P3VIC			  "0"
-	  R1PIC			  "90*pi/180"
+	  R1PIC			  "0"
 	  R1VIC			  "0"
 	  R2PIC			  "0"
 	  R2VIC			  "0"
@@ -1686,7 +1729,7 @@ Model {
 	  ClassName		  "Environment"
 	  DialogTemplateClass	  "MECH.MachineEnvironment"
 	  SyncWhenCopied	  "off"
-	  Gravity		  "[0 -9.81 0]"
+	  Gravity		  "[0 -g 0]"
 	  GravityUnits		  "m/s^2"
 	  GravityAsSignal	  off
 	  Dimensionality	  "Auto-detect"
@@ -1740,7 +1783,7 @@ Model {
 	  Name			  "Scope"
 	  SID			  "135"
 	  Ports			  [1]
-	  Position		  [715, 644, 745, 676]
+	  Position		  [755, 644, 785, 676]
 	  ZOrder		  40
 	  Floating		  off
 	  Location		  [2658, 319, 2982, 558]
@@ -1799,6 +1842,1319 @@ Model {
 	  SampleTime		  "0"
 	}
 	Block {
+	  BlockType		  Scope
+	  Name			  "Scope2"
+	  SID			  "173"
+	  Ports			  [1]
+	  Position		  [695, 909, 725, 941]
+	  ZOrder		  50
+	  Floating		  off
+	  Location		  [2542, 680, 3705, 1123]
+	  Open			  off
+	  NumInputPorts		  "1"
+	  List {
+	    ListType		    AxesTitles
+	    axes1		    "%<SignalLabel>"
+	  }
+	  List {
+	    ListType		    ScopeGraphics
+	    FigureColor		    "[0.501960784313725 0.501960784313725 0.501960784313725]"
+	    AxesColor		    "[0 0 0]"
+	    AxesTickColor	    "[1 1 1]"
+	    LineColors		    "[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]"
+	    LineStyles		    "-|-|-|-|-|-"
+	    LineWidths		    "[0.5 0.5 0.5 0.5 0.5 0.5]"
+	    MarkerStyles	    "none|none|none|none|none|none"
+	  }
+	  ShowLegends		  off
+	  YMin			  "0.588"
+	  YMax			  "0.5895"
+	  SaveName		  "ScopeData2"
+	  DataFormat		  "StructureWithTime"
+	  LimitDataPoints	  off
+	  SampleTime		  "0"
+	}
+	Block {
+	  BlockType		  Scope
+	  Name			  "Scope4"
+	  SID			  "211"
+	  Ports			  [2]
+	  Position		  [550, 391, 580, 424]
+	  ZOrder		  52
+	  Floating		  off
+	  Location		  [890, 516, 1395, 1011]
+	  Open			  off
+	  NumInputPorts		  "2"
+	  List {
+	    ListType		    AxesTitles
+	    axes1		    "%<SignalLabel>"
+	    axes2		    "%<SignalLabel>"
+	  }
+	  List {
+	    ListType		    ScopeGraphics
+	    FigureColor		    "[0.5 0.5 0.5]"
+	    AxesColor		    "[0 0 0]"
+	    AxesTickColor	    "[1 1 1]"
+	    LineColors		    "[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]"
+	    LineStyles		    "-|-|-|-|-|-"
+	    LineWidths		    "[0.5 0.5 0.5 0.5 0.5 0.5]"
+	    MarkerStyles	    "none|none|none|none|none|none"
+	  }
+	  ShowLegends		  off
+	  YMin			  "-5~-5"
+	  YMax			  "5~5"
+	  SaveName		  "ScopeData4"
+	  DataFormat		  "StructureWithTime"
+	  LimitDataPoints	  off
+	  SampleTime		  "0"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Subsystem"
+	  SID			  "266"
+	  Ports			  [1, 5]
+	  Position		  [1230, 563, 1545, 627]
+	  ZOrder		  57
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  System {
+	    Name		    "Subsystem"
+	    Location		    [2066, 340, 3645, 1268]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "80"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Torques\n"
+	      SID		      "267"
+	      Position		      [1115, 753, 1145, 767]
+	      ZOrder		      50
+	      BlockMirror	      on
+	      NamePlacement	      "alternate"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Body Sensor"
+	      SID		      "268"
+	      Ports		      [0, 1, 0, 0, 0, 1]
+	      Position		      [210, 575, 250, 615]
+	      ZOrder		      61
+	      BlockMirror	      on
+	      NamePlacement	      "alternate"
+	      LibraryVersion	      "1.1"
+	      SourceBlock	      "mblibv1/Sensors & \nActuators/Body Sensor"
+	      SourceType	      "Body Sensor"
+	      UpdateFromCAD	      "off"
+	      PhysicalDomain	      "Mechanical"
+	      PortType		      "blob"
+	      Muxed		      "on"
+	      Pose		      "off"
+	      Angle		      "on"
+	      AngleUnits	      "deg"
+	      ArcVelocity	      "off"
+	      ArcVelocityUnits	      "deg/s"
+	      ArcAcceleration	      "off"
+	      ArcAccelerationUnits    "deg/s^2"
+	      CoordPosition	      "on"
+	      CoordPositionUnits      "m"
+	      Velocity		      "off"
+	      VelocityUnits	      "m/s"
+	      Acceleration	      "off"
+	      AccelerationUnits	      "m/s^2"
+	      Quaternion	      "on"
+	      QuaternionDT	      "off"
+	      QuaternionDDT	      "off"
+	      QuaternionUnits	      "off"
+	      OutputVector	      "[1]"
+	      ActiveIO		      "off"
+	      Width		      "3"
+	      ClassName		      "BodySensor"
+	      DialogClass	      "MechanicalSensorBlock"
+	      ReferenceFrame	      "Absolute (World)"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Body Sensor1"
+	      SID		      "269"
+	      Ports		      [0, 1, 0, 0, 0, 1]
+	      Position		      [200, 450, 240, 490]
+	      ZOrder		      64
+	      BlockMirror	      on
+	      NamePlacement	      "alternate"
+	      LibraryVersion	      "1.1"
+	      SourceBlock	      "mblibv1/Sensors & \nActuators/Body Sensor"
+	      SourceType	      "Body Sensor"
+	      UpdateFromCAD	      "off"
+	      PhysicalDomain	      "Mechanical"
+	      PortType		      "blob"
+	      Muxed		      "on"
+	      Pose		      "off"
+	      Angle		      "on"
+	      AngleUnits	      "deg"
+	      ArcVelocity	      "off"
+	      ArcVelocityUnits	      "deg/s"
+	      ArcAcceleration	      "off"
+	      ArcAccelerationUnits    "deg/s^2"
+	      CoordPosition	      "on"
+	      CoordPositionUnits      "m"
+	      Velocity		      "off"
+	      VelocityUnits	      "m/s"
+	      Acceleration	      "off"
+	      AccelerationUnits	      "m/s^2"
+	      Quaternion	      "on"
+	      QuaternionDT	      "off"
+	      QuaternionDDT	      "off"
+	      QuaternionUnits	      "off"
+	      OutputVector	      "[1]"
+	      ActiveIO		      "off"
+	      Width		      "3"
+	      ClassName		      "BodySensor"
+	      DialogClass	      "MechanicalSensorBlock"
+	      ReferenceFrame	      "Absolute (World)"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Body Sensor2"
+	      SID		      "270"
+	      Ports		      [0, 1, 0, 0, 0, 1]
+	      Position		      [935, 590, 975, 630]
+	      ZOrder		      70
+	      LibraryVersion	      "1.1"
+	      SourceBlock	      "mblibv1/Sensors & \nActuators/Body Sensor"
+	      SourceType	      "Body Sensor"
+	      UpdateFromCAD	      "off"
+	      PhysicalDomain	      "Mechanical"
+	      PortType		      "blob"
+	      Muxed		      "on"
+	      Pose		      "off"
+	      Angle		      "on"
+	      AngleUnits	      "deg"
+	      ArcVelocity	      "off"
+	      ArcVelocityUnits	      "deg/s"
+	      ArcAcceleration	      "off"
+	      ArcAccelerationUnits    "deg/s^2"
+	      CoordPosition	      "on"
+	      CoordPositionUnits      "m"
+	      Velocity		      "off"
+	      VelocityUnits	      "m/s"
+	      Acceleration	      "off"
+	      AccelerationUnits	      "m/s^2"
+	      Quaternion	      "on"
+	      QuaternionDT	      "off"
+	      QuaternionDDT	      "off"
+	      QuaternionUnits	      "off"
+	      OutputVector	      "[1]"
+	      ActiveIO		      "off"
+	      Width		      "3"
+	      ClassName		      "BodySensor"
+	      DialogClass	      "MechanicalSensorBlock"
+	      ReferenceFrame	      "Absolute (World)"
+	    }
+	    Block {
+	      BlockType		      Demux
+	      Name		      "Demux"
+	      SID		      "271"
+	      Ports		      [1, 3]
+	      Position		      [1055, 718, 1060, 802]
+	      ZOrder		      49
+	      BlockMirror	      on
+	      NamePlacement	      "alternate"
+	      ShowName		      off
+	      Outputs		      "3"
+	      DisplayOption	      "bar"
+	    }
+	    Block {
+	      BlockType		      Demux
+	      Name		      "Demux1"
+	      SID		      "305"
+	      Ports		      [1, 3]
+	      Position		      [595, 51, 600, 89]
+	      ZOrder		      72
+	      ShowName		      off
+	      Outputs		      "3"
+	      DisplayOption	      "bar"
+	    }
+	    Block {
+	      BlockType		      Demux
+	      Name		      "Demux2"
+	      SID		      "306"
+	      Ports		      [1, 3]
+	      Position		      [520, 546, 525, 584]
+	      ZOrder		      73
+	      ShowName		      off
+	      Outputs		      "3"
+	      DisplayOption	      "bar"
+	    }
+	    Block {
+	      BlockType		      Demux
+	      Name		      "Demux3"
+	      SID		      "307"
+	      Ports		      [1, 3]
+	      Position		      [520, 281, 525, 319]
+	      ZOrder		      74
+	      ShowName		      off
+	      Outputs		      "3"
+	      DisplayOption	      "bar"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Elbow"
+	      SID		      "282"
+	      Ports		      [0, 1, 0, 0, 0, 1]
+	      Position		      [455, 545, 495, 585]
+	      ZOrder		      40
+	      LibraryVersion	      "1.1"
+	      SourceBlock	      "mblibv1/Sensors & \nActuators/Joint Sensor"
+	      SourceType	      "Joint Sensor"
+	      UpdateFromCAD	      "off"
+	      PhysicalDomain	      "Mechanical"
+	      PortType		      "blob"
+	      Muxed		      "on"
+	      Pose		      "off"
+	      Angle		      "on"
+	      AngleUnits	      "rad"
+	      ArcVelocity	      "on"
+	      ArcVelocityUnits	      "rad/s"
+	      ArcAcceleration	      "off"
+	      ArcAccelerationUnits    "deg/s^2"
+	      CoordPosition	      "on"
+	      CoordPositionUnits      "m"
+	      Velocity		      "off"
+	      VelocityUnits	      "m/s"
+	      Acceleration	      "off"
+	      AccelerationUnits	      "m/s^2"
+	      Quaternion	      "on"
+	      QuaternionDT	      "off"
+	      QuaternionDDT	      "off"
+	      QuaternionUnits	      "off"
+	      OutputVector	      "[1]"
+	      ActiveIO		      "off"
+	      Width		      "3"
+	      ClassName		      "JointSensor"
+	      DialogClass	      "MechanicalSensorBlock"
+	      Primitive		      "R1"
+	      Force		      "off"
+	      ForceUnits	      "N"
+	      Torque		      "on"
+	      TorqueUnits	      "N*m"
+	      ReferenceFrame	      "Absolute (World)"
+	      ReactionSensedSide      "Base"
+	      ReactionReferenceFrame  "Absolute (World)"
+	      ReactionForce	      "off"
+	      ReactionForceUnits      "N"
+	      ReactionMoment	      "off"
+	      ReactionMomentUnits     "N*m"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Forearm"
+	      SID		      "278"
+	      Ports		      [0, 0, 0, 0, 0, 2, 1]
+	      Position		      [605, 685, 770, 725]
+	      ZOrder		      35
+	      LibraryVersion	      "1.1"
+	      SourceBlock	      "mblibv1/Bodies/Body"
+	      SourceType	      "Body"
+	      LConnTagsString	      "CG|CS1"
+	      RConnTagsString	      "CS2"
+	      UpdateFromCAD	      "off"
+	      ClassName		      "Body"
+	      DialogClass	      "MechanicalBodyBlock"
+	      Mass		      "1"
+	      MassUnits		      "kg"
+	      InertiaUnits	      "kg*m^2"
+	      Inertia		      "eye(3)"
+	      Shape		      "Cylinder"
+	      ShapeDims		      "[1 1]"
+	      ShapeUnits	      "m"
+	      ShapeUse		      "false"
+	      Density		      "1"
+	      DensityUnits	      "kg/m^3"
+	      DensityUse	      "false"
+	      GraphicsMode	      "MACHINE_DEFAULT"
+	      BodyColorSelMode	      "MACHINE_DEFAULT"
+	      BodyColor		      "[1 0 0]"
+	      AttachedToCS	      "CG"
+	      CG		      "Left$CG$[0 -L2/2 0]$CS1$CS1$m$[0 0 0]$Euler X-Y-Z$deg$WORLD$true$none"
+	      WorkingFrames	      "Left$CS1$[0 0 0]$Adjoining$Adjoining$m$[0 0 0]$Euler X-Y-Z$deg$WORLD$true$none#Right$CS2$["
+	      "0 -L2 0]$CS1$CS1$m$[0 0 0]$Euler X-Y-Z$deg$WORLD$true$none"
+	      CGPos		      "[0 -L2/2 0]"
+	      CGRot		      "[0 0 0]"
+	      CS0Pos		      "[]"
+	      CS0Rot		      "[]"
+	      CS1Pos		      "[0 0 0]"
+	      CS1Rot		      "[0 0 0]"
+	      CS2Pos		      "[0 -L2 0]"
+	      CS2Rot		      "[0 0 0]"
+	      CS3Pos		      "[]"
+	      CS3Rot		      "[]"
+	      CS4Pos		      "[]"
+	      CS4Rot		      "[]"
+	      CS5Pos		      "[]"
+	      CS5Rot		      "[]"
+	      CS6Pos		      "[]"
+	      CS6Rot		      "[]"
+	      CS7Pos		      "[]"
+	      CS7Rot		      "[]"
+	      CS8Pos		      "[]"
+	      CS8Rot		      "[]"
+	      CS9Pos		      "[]"
+	      CS9Rot		      "[]"
+	      CS10Pos		      "[]"
+	      CS10Rot		      "[]"
+	      CS11Pos		      "[]"
+	      CS11Rot		      "[]"
+	      CS12Pos		      "[]"
+	      CS12Rot		      "[]"
+	      CS13Pos		      "[]"
+	      CS13Rot		      "[]"
+	      CS14Pos		      "[]"
+	      CS14Rot		      "[]"
+	      CS15Pos		      "[]"
+	      CS15Rot		      "[]"
+	      CS16Pos		      "[]"
+	      CS16Rot		      "[]"
+	      CS17Pos		      "[]"
+	      CS17Rot		      "[]"
+	      CS18Pos		      "[]"
+	      CS18Rot		      "[]"
+	      CS19Pos		      "[]"
+	      CS19Rot		      "[]"
+	      CS20Pos		      "[]"
+	      CS20Rot		      "[]"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Ground"
+	      SID		      "279"
+	      Ports		      [0, 0, 0, 0, 0, 1, 1]
+	      Position		      [200, 205, 240, 245]
+	      ZOrder		      32
+	      BlockRotation	      270
+	      BlockMirror	      on
+	      NamePlacement	      "alternate"
+	      LibraryVersion	      "1.1"
+	      UserDataPersistent      on
+	      UserData		      "DataTag1"
+	      SourceBlock	      "mblibv1/Bodies/Ground"
+	      SourceType	      "Ground"
+	      UpdateFromCAD	      "off"
+	      LeftPortType	      "env"
+	      RightPortType	      "workingframe"
+	      PhysicalDomain	      "Mechanical"
+	      DialogClass	      "GroundBlock"
+	      ClassName		      "Ground"
+	      CoordPosition	      "[0 0 0]"
+	      CoordPositionUnits      "m"
+	      StateVectorMgrId	      "-1"
+	      MachineId		      "[0 0]"
+	      ShowEnvPort	      on
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Horizontal, static arm"
+	      SID		      "280"
+	      Ports		      [0, 0, 0, 0, 0, 0, 1]
+	      Position		      [420, 645, 460, 685]
+	      ZOrder		      48
+	      BlockRotation	      270
+	      LibraryVersion	      "1.1"
+	      SourceBlock	      "mblibv1/Sensors & \nActuators/Joint Initial Condition"
+	      SourceType	      "Joint Initial Condition"
+	      UpdateFromCAD	      "off"
+	      LeftPortType	      "blob"
+	      RightPortType	      "blob"
+	      PhysicalDomain	      "mechanical"
+	      ClassName		      "InitialCondition"
+	      DialogClass	      "InitialConditionBlock"
+	      InitialConditions	      "P1$false$0$m$deg$0$m/s$deg/s#P2$false$0$m$deg$0$m/s$deg/s#P3$false$0$m$deg$0$m/s$deg/s"
+	      "#R1$false$0$m$deg$0$m/s$deg/s#R2$false$0$m$deg$0$m/s$deg/s#R3$false$0$m$deg$0$m/s$deg/s#S$false$0$m$deg$0$m/s$d"
+	      "eg/s"
+	      P1PIC		      "0"
+	      P1VIC		      "0"
+	      P2PIC		      "0"
+	      P2VIC		      "0"
+	      P3PIC		      "0"
+	      P3VIC		      "0"
+	      R1PIC		      "0"
+	      R1VIC		      "0"
+	      R2PIC		      "0"
+	      R2VIC		      "0"
+	      R3PIC		      "0"
+	      R3VIC		      "0"
+	      SPIC		      "0"
+	      SVIC		      "0"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Joint Sensor"
+	      SID		      "281"
+	      Ports		      [0, 1, 0, 0, 0, 1]
+	      Position		      [455, 205, 495, 245]
+	      ZOrder		      38
+	      LibraryVersion	      "1.1"
+	      SourceBlock	      "mblibv1/Sensors & \nActuators/Joint Sensor"
+	      SourceType	      "Joint Sensor"
+	      UpdateFromCAD	      "off"
+	      PhysicalDomain	      "Mechanical"
+	      PortType		      "blob"
+	      Muxed		      "on"
+	      Pose		      "off"
+	      Angle		      "on"
+	      AngleUnits	      "rad"
+	      ArcVelocity	      "on"
+	      ArcVelocityUnits	      "rad/s"
+	      ArcAcceleration	      "off"
+	      ArcAccelerationUnits    "deg/s^2"
+	      CoordPosition	      "on"
+	      CoordPositionUnits      "m"
+	      Velocity		      "off"
+	      VelocityUnits	      "m/s"
+	      Acceleration	      "off"
+	      AccelerationUnits	      "m/s^2"
+	      Quaternion	      "on"
+	      QuaternionDT	      "off"
+	      QuaternionDDT	      "off"
+	      QuaternionUnits	      "off"
+	      OutputVector	      "[1]"
+	      ActiveIO		      "off"
+	      Width		      "3"
+	      ClassName		      "JointSensor"
+	      DialogClass	      "MechanicalSensorBlock"
+	      Primitive		      "R1"
+	      Force		      "off"
+	      ForceUnits	      "N"
+	      Torque		      "on"
+	      TorqueUnits	      "N*m"
+	      ReferenceFrame	      "Absolute (World)"
+	      ReactionSensedSide      "Base"
+	      ReactionReferenceFrame  "Absolute (World)"
+	      ReactionForce	      "off"
+	      ReactionForceUnits      "N"
+	      ReactionMoment	      "off"
+	      ReactionMomentUnits     "N*m"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Joint Sensor2"
+	      SID		      "283"
+	      Ports		      [0, 1, 0, 0, 0, 1]
+	      Position		      [455, 280, 495, 320]
+	      ZOrder		      45
+	      LibraryVersion	      "1.1"
+	      SourceBlock	      "mblibv1/Sensors & \nActuators/Joint Sensor"
+	      SourceType	      "Joint Sensor"
+	      UpdateFromCAD	      "off"
+	      PhysicalDomain	      "Mechanical"
+	      PortType		      "blob"
+	      Muxed		      "on"
+	      Pose		      "off"
+	      Angle		      "on"
+	      AngleUnits	      "rad"
+	      ArcVelocity	      "on"
+	      ArcVelocityUnits	      "rad/s"
+	      ArcAcceleration	      "off"
+	      ArcAccelerationUnits    "deg/s^2"
+	      CoordPosition	      "on"
+	      CoordPositionUnits      "m"
+	      Velocity		      "off"
+	      VelocityUnits	      "m/s"
+	      Acceleration	      "off"
+	      AccelerationUnits	      "m/s^2"
+	      Quaternion	      "on"
+	      QuaternionDT	      "off"
+	      QuaternionDDT	      "off"
+	      QuaternionUnits	      "off"
+	      OutputVector	      "[1]"
+	      ActiveIO		      "off"
+	      Width		      "3"
+	      ClassName		      "JointSensor"
+	      DialogClass	      "MechanicalSensorBlock"
+	      Primitive		      "R2"
+	      Force		      "off"
+	      ForceUnits	      "N"
+	      Torque		      "on"
+	      TorqueUnits	      "N*m"
+	      ReferenceFrame	      "Absolute (World)"
+	      ReactionSensedSide      "Base"
+	      ReactionReferenceFrame  "Absolute (World)"
+	      ReactionForce	      "off"
+	      ReactionForceUnits      "N"
+	      ReactionMoment	      "off"
+	      ReactionMomentUnits     "N*m"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Machine\nEnvironment"
+	      SID		      "284"
+	      Ports		      [0, 0, 0, 0, 0, 0, 1]
+	      Position		      [145, 155, 185, 175]
+	      ZOrder		      36
+	      LibraryVersion	      "1.1"
+	      SourceBlock	      "mblibv1/Bodies/Machine\nEnvironment"
+	      SourceType	      "Machine Environment"
+	      PortType		      "env"
+	      PhysicalDomain	      "Mechanical"
+	      ClassName		      "Environment"
+	      DialogTemplateClass     "MECH.MachineEnvironment"
+	      SyncWhenCopied	      "off"
+	      Gravity		      "[0 -g 0]"
+	      GravityUnits	      "m/s^2"
+	      GravityAsSignal	      off
+	      Dimensionality	      "Auto-detect"
+	      AnalysisType	      "Forward dynamics"
+	      LinearAssemblyTolerance "1e-3"
+	      LinearAssemblyToleranceUnits "m"
+	      AngularAssemblyTolerance "1e-3"
+	      AngularAssemblyToleranceUnits "rad"
+	      ConstraintSolverType    "Stabilizing"
+	      ConstraintRelTolerance  "1e-4"
+	      ConstraintAbsTolerance  "1e-4"
+	      UseRobustSingularityHandling off
+	      RedundancyAnalysisToleranceType "Automatically select tolerance"
+	      RedundancyAnalysisTolerance "1e-14"
+	      StatePerturbationType   "Fixed"
+	      PerturbationSize	      "1e-5"
+	      VisualizeMachine	      on
+	      BodyVisualizationType   "Use model default body geometries"
+	      BodyColorSelMode	      "Use model default"
+	      DefaultBodyColor	      "[1 0 0]"
+	    }
+	    Block {
+	      BlockType		      Mux
+	      Name		      "Mux"
+	      SID		      "285"
+	      Ports		      [3, 1]
+	      Position		      [885, 141, 890, 189]
+	      ZOrder		      51
+	      ShowName		      off
+	      Inputs		      "3"
+	      DisplayOption	      "bar"
+	    }
+	    Block {
+	      BlockType		      Mux
+	      Name		      "Mux1"
+	      SID		      "286"
+	      Ports		      [2, 1]
+	      Position		      [80, 513, 85, 562]
+	      ZOrder		      63
+	      BlockMirror	      on
+	      ShowName		      off
+	      Inputs		      "2"
+	      DisplayOption	      "bar"
+	    }
+	    Block {
+	      BlockType		      Mux
+	      Name		      "Mux2"
+	      SID		      "287"
+	      Ports		      [3, 1]
+	      Position		      [885, 256, 890, 304]
+	      ZOrder		      66
+	      ShowName		      off
+	      Inputs		      "3"
+	      DisplayOption	      "bar"
+	    }
+	    Block {
+	      BlockType		      Mux
+	      Name		      "Mux3"
+	      SID		      "308"
+	      Ports		      [3, 1]
+	      Position		      [885, 56, 890, 104]
+	      ZOrder		      75
+	      ShowName		      off
+	      Inputs		      "3"
+	      DisplayOption	      "bar"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Revolute1"
+	      SID		      "288"
+	      Ports		      [0, 0, 0, 0, 0, 3, 2]
+	      Position		      [353, 640, 407, 690]
+	      ZOrder		      34
+	      BlockRotation	      270
+	      BlockMirror	      on
+	      NamePlacement	      "alternate"
+	      LibraryVersion	      "1.1"
+	      SourceBlock	      "mblibv1/Joints/Revolute"
+	      SourceType	      "Revolute"
+	      LConnTagsString	      "__newl0|SA1|SA2"
+	      RConnTagsString	      "__newr0|SA1"
+	      UpdateFromCAD	      "off"
+	      NumSAPorts	      "3"
+	      CutJoint		      "off"
+	      MarkAsCut		      "off"
+	      Primitives	      "prismatic"
+	      PrimitiveProps	      "R1$World$[0 0 1]$revolute"
+	      ClassName		      "Joint"
+	      DialogClass	      "JointBlock"
+	      R1Axis		      "[0 0 1]"
+	    }
+	    Block {
+	      BlockType		      Scope
+	      Name		      "Scope"
+	      SID		      "289"
+	      Ports		      [1]
+	      Position		      [580, 209, 610, 241]
+	      ZOrder		      41
+	      Floating		      off
+	      Location		      [242, 238, 1018, 717]
+	      Open		      off
+	      NumInputPorts	      "1"
+	      List {
+		ListType		AxesTitles
+		axes1			"%<SignalLabel>"
+	      }
+	      ShowLegends	      off
+	      DataFormat	      "StructureWithTime"
+	      LimitDataPoints	      off
+	      SampleTime	      "0"
+	    }
+	    Block {
+	      BlockType		      Scope
+	      Name		      "Scope1"
+	      SID		      "290"
+	      Ports		      [1]
+	      Position		      [570, 549, 600, 581]
+	      ZOrder		      42
+	      Floating		      off
+	      Location		      [188, 390, 512, 629]
+	      Open		      off
+	      NumInputPorts	      "1"
+	      List {
+		ListType		AxesTitles
+		axes1			"%<SignalLabel>"
+	      }
+	      ShowLegends	      off
+	      SaveName		      "ScopeData1"
+	      DataFormat	      "StructureWithTime"
+	      SampleTime	      "0"
+	    }
+	    Block {
+	      BlockType		      Scope
+	      Name		      "Scope2"
+	      SID		      "291"
+	      Ports		      [1]
+	      Position		      [580, 284, 610, 316]
+	      ZOrder		      46
+	      Floating		      off
+	      Location		      [923, 515, 1439, 931]
+	      Open		      off
+	      NumInputPorts	      "1"
+	      List {
+		ListType		AxesTitles
+		axes1			"%<SignalLabel>"
+	      }
+	      ShowLegends	      off
+	      SaveName		      "ScopeData2"
+	      DataFormat	      "StructureWithTime"
+	      LimitDataPoints	      off
+	      SampleTime	      "0"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Universal"
+	      SID		      "292"
+	      Ports		      [0, 0, 0, 0, 0, 4, 3]
+	      Position		      [350, 315, 405, 365]
+	      ZOrder		      43
+	      BlockRotation	      270
+	      BlockMirror	      on
+	      NamePlacement	      "alternate"
+	      LibraryVersion	      "1.1"
+	      SourceBlock	      "mblibv1/Joints/Universal"
+	      SourceType	      "Universal"
+	      LConnTagsString	      "__newl0|SA1|SA2|SA3"
+	      RConnTagsString	      "__newr0|SA1|SA2"
+	      UpdateFromCAD	      "off"
+	      NumSAPorts	      "5"
+	      CutJoint		      "off"
+	      MarkAsCut		      "off"
+	      Primitives	      "prismatic"
+	      PrimitiveProps	      "R1$World$[0 0 1]$revolute#R2$World$[1 0 0]$revolute"
+	      ClassName		      "Joint"
+	      DialogClass	      "JointBlock"
+	      R1Axis		      "[0 0 1]"
+	      R2Axis		      "[1 0 0]"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Upper Arm"
+	      SID		      "293"
+	      Ports		      [0, 0, 0, 0, 0, 2, 1]
+	      Position		      [317, 425, 373, 590]
+	      ZOrder		      33
+	      BlockRotation	      270
+	      BlockMirror	      on
+	      NamePlacement	      "alternate"
+	      LibraryVersion	      "1.1"
+	      SourceBlock	      "mblibv1/Bodies/Body"
+	      SourceType	      "Body"
+	      LConnTagsString	      "CG|CS1"
+	      RConnTagsString	      "CS2"
+	      UpdateFromCAD	      "off"
+	      ClassName		      "Body"
+	      DialogClass	      "MechanicalBodyBlock"
+	      Mass		      "1"
+	      MassUnits		      "kg"
+	      InertiaUnits	      "kg*m^2"
+	      Inertia		      "eye(3)"
+	      Shape		      "Cylinder"
+	      ShapeDims		      "[1 1]"
+	      ShapeUnits	      "m"
+	      ShapeUse		      "false"
+	      Density		      "1"
+	      DensityUnits	      "kg/m^3"
+	      DensityUse	      "false"
+	      GraphicsMode	      "MACHINE_DEFAULT"
+	      BodyColorSelMode	      "MACHINE_DEFAULT"
+	      BodyColor		      "[1 0 0]"
+	      AttachedToCS	      "CG"
+	      CG		      "Left$CG$[0 -L1/2 0]$CS1$CS1$m$[0 0 0]$Euler X-Y-Z$deg$WORLD$true$none"
+	      WorkingFrames	      "Left$CS1$[0 0 0]$World$World$m$[0 0 0]$Euler X-Y-Z$deg$WORLD$true$none#Right$CS2$[0 -L1 0]"
+	      "$CS1$CS1$m$[0 0 0]$Euler X-Y-Z$deg$WORLD$true$none"
+	      CGPos		      "[0 -L1/2 0]"
+	      CGRot		      "[0 0 0]"
+	      CS0Pos		      "[]"
+	      CS0Rot		      "[]"
+	      CS1Pos		      "[0 0 0]"
+	      CS1Rot		      "[0 0 0]"
+	      CS2Pos		      "[0 -L1 0]"
+	      CS2Rot		      "[0 0 0]"
+	      CS3Pos		      "[]"
+	      CS3Rot		      "[]"
+	      CS4Pos		      "[]"
+	      CS4Rot		      "[]"
+	      CS5Pos		      "[]"
+	      CS5Rot		      "[]"
+	      CS6Pos		      "[]"
+	      CS6Rot		      "[]"
+	      CS7Pos		      "[]"
+	      CS7Rot		      "[]"
+	      CS8Pos		      "[]"
+	      CS8Rot		      "[]"
+	      CS9Pos		      "[]"
+	      CS9Rot		      "[]"
+	      CS10Pos		      "[]"
+	      CS10Rot		      "[]"
+	      CS11Pos		      "[]"
+	      CS11Rot		      "[]"
+	      CS12Pos		      "[]"
+	      CS12Rot		      "[]"
+	      CS13Pos		      "[]"
+	      CS13Rot		      "[]"
+	      CS14Pos		      "[]"
+	      CS14Rot		      "[]"
+	      CS15Pos		      "[]"
+	      CS15Rot		      "[]"
+	      CS16Pos		      "[]"
+	      CS16Rot		      "[]"
+	      CS17Pos		      "[]"
+	      CS17Rot		      "[]"
+	      CS18Pos		      "[]"
+	      CS18Rot		      "[]"
+	      CS19Pos		      "[]"
+	      CS19Rot		      "[]"
+	      CS20Pos		      "[]"
+	      CS20Rot		      "[]"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Vertical, static arm"
+	      SID		      "294"
+	      Ports		      [0, 0, 0, 0, 0, 0, 1]
+	      Position		      [455, 145, 495, 185]
+	      ZOrder		      47
+	      BlockMirror	      on
+	      NamePlacement	      "alternate"
+	      LibraryVersion	      "1.1"
+	      SourceBlock	      "mblibv1/Sensors & \nActuators/Joint Initial Condition"
+	      SourceType	      "Joint Initial Condition"
+	      UpdateFromCAD	      "off"
+	      LeftPortType	      "blob"
+	      RightPortType	      "blob"
+	      PhysicalDomain	      "mechanical"
+	      ClassName		      "InitialCondition"
+	      DialogClass	      "InitialConditionBlock"
+	      InitialConditions	      "P1$false$0$m$deg$0$m/s$deg/s#P2$false$0$m$deg$0$m/s$deg/s#P3$false$0$m$deg$0$m/s$deg/s"
+	      "#R1$true$0$m$deg$0$m/s$deg/s#R2$true$0$m$deg$0$m/s$deg/s#R3$false$0$m$deg$0$m/s$deg/s#S$false$0$m$deg$0$m/s$deg"
+	      "/s"
+	      P1PIC		      "0"
+	      P1VIC		      "0"
+	      P2PIC		      "0"
+	      P2VIC		      "0"
+	      P3PIC		      "0"
+	      P3VIC		      "0"
+	      R1PIC		      "0"
+	      R1VIC		      "0"
+	      R2PIC		      "0"
+	      R2VIC		      "0"
+	      R3PIC		      "0"
+	      R3VIC		      "0"
+	      SPIC		      "0"
+	      SVIC		      "0"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Y"
+	      SID		      "295"
+	      Ports		      [1, 0, 0, 0, 0, 0, 1]
+	      Position		      [455, 425, 495, 465]
+	      ZOrder		      37
+	      BlockMirror	      on
+	      NamePlacement	      "alternate"
+	      LibraryVersion	      "1.1"
+	      SourceBlock	      "mblibv1/Sensors & \nActuators/Joint Actuator"
+	      SourceType	      "Joint Actuator"
+	      UpdateFromCAD	      "off"
+	      PhysicalDomain	      "Mechanical"
+	      PortType		      "blob"
+	      ActuationStyle	      "Force"
+	      AngleUnits	      "deg"
+	      ArcVelocityUnits	      "deg/s"
+	      ArcAccelerationUnits    "deg/s^2"
+	      CoordPositionUnits      "m"
+	      VelocityUnits	      "m/s"
+	      AccelerationUnits	      "m/s^2"
+	      ForceUnits	      "N"
+	      TorqueUnits	      "N*m"
+	      ActiveIO		      "off"
+	      Width		      "1"
+	      ClassName		      "JointActuator"
+	      DialogClass	      "MechanicalActuatorBlock"
+	      Primitive		      "R2"
+	      ReferenceFrame	      "Absolute (World)"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "tau_2"
+	      SID		      "296"
+	      Ports		      [1, 0, 0, 0, 0, 0, 1]
+	      Position		      [445, 740, 485, 780]
+	      ZOrder		      39
+	      BlockMirror	      on
+	      NamePlacement	      "alternate"
+	      LibraryVersion	      "1.1"
+	      SourceBlock	      "mblibv1/Sensors & \nActuators/Joint Actuator"
+	      SourceType	      "Joint Actuator"
+	      UpdateFromCAD	      "off"
+	      PhysicalDomain	      "Mechanical"
+	      PortType		      "blob"
+	      ActuationStyle	      "Force"
+	      AngleUnits	      "deg"
+	      ArcVelocityUnits	      "deg/s"
+	      ArcAccelerationUnits    "deg/s^2"
+	      CoordPositionUnits      "m"
+	      VelocityUnits	      "m/s"
+	      AccelerationUnits	      "m/s^2"
+	      ForceUnits	      "N"
+	      TorqueUnits	      "N*m"
+	      ActiveIO		      "off"
+	      Width		      "1"
+	      ClassName		      "JointActuator"
+	      DialogClass	      "MechanicalActuatorBlock"
+	      Primitive		      "R1"
+	      ReferenceFrame	      "Absolute (World)"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "theta"
+	      SID		      "297"
+	      Ports		      [1, 0, 0, 0, 0, 0, 1]
+	      Position		      [455, 360, 495, 400]
+	      ZOrder		      44
+	      BlockMirror	      on
+	      NamePlacement	      "alternate"
+	      LibraryVersion	      "1.1"
+	      SourceBlock	      "mblibv1/Sensors & \nActuators/Joint Actuator"
+	      SourceType	      "Joint Actuator"
+	      UpdateFromCAD	      "off"
+	      PhysicalDomain	      "Mechanical"
+	      PortType		      "blob"
+	      ActuationStyle	      "Force"
+	      AngleUnits	      "deg"
+	      ArcVelocityUnits	      "deg/s"
+	      ArcAccelerationUnits    "deg/s^2"
+	      CoordPositionUnits      "m"
+	      VelocityUnits	      "m/s"
+	      AccelerationUnits	      "m/s^2"
+	      ForceUnits	      "N"
+	      TorqueUnits	      "N*m"
+	      ActiveIO		      "off"
+	      Width		      "1"
+	      ClassName		      "JointActuator"
+	      DialogClass	      "MechanicalActuatorBlock"
+	      Primitive		      "R1"
+	      ReferenceFrame	      "Absolute (World)"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Angle positions"
+	      SID		      "298"
+	      Position		      [1100, 188, 1130, 202]
+	      ZOrder		      -2
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "CG positions\n"
+	      SID		      "299"
+	      Position		      [20, 533, 50, 547]
+	      ZOrder		      62
+	      BlockMirror	      on
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Torques"
+	      SID		      "300"
+	      Position		      [1100, 273, 1130, 287]
+	      ZOrder		      65
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "End Position"
+	      SID		      "301"
+	      Position		      [1020, 603, 1050, 617]
+	      ZOrder		      71
+	      NamePlacement	      "alternate"
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Anglular Velocities"
+	      SID		      "309"
+	      Position		      [1100, 103, 1130, 117]
+	      ZOrder		      76
+	      Port		      "5"
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      LineType		      "Connection"
+	      SrcBlock		      "Universal"
+	      SrcPort		      LConn1
+	      Points		      [-135, 0]
+	      DstBlock		      "Ground"
+	      DstPort		      RConn1
+	    }
+	    Line {
+	      LineType		      "Connection"
+	      SrcBlock		      "Universal"
+	      SrcPort		      RConn1
+	      DstBlock		      "Upper Arm"
+	      DstPort		      LConn2
+	    }
+	    Line {
+	      LineType		      "Connection"
+	      SrcBlock		      "Revolute1"
+	      SrcPort		      LConn1
+	      Points		      [0, -10; -15, 0]
+	      DstBlock		      "Upper Arm"
+	      DstPort		      RConn1
+	    }
+	    Line {
+	      LineType		      "Connection"
+	      SrcBlock		      "Revolute1"
+	      SrcPort		      RConn1
+	      Points		      [220, 0]
+	      DstBlock		      "Forearm"
+	      DstPort		      LConn2
+	    }
+	    Line {
+	      LineType		      "Connection"
+	      SrcBlock		      "Machine\nEnvironment"
+	      SrcPort		      RConn1
+	      Points		      [20, 0]
+	      DstBlock		      "Ground"
+	      DstPort		      LConn1
+	    }
+	    Line {
+	      LineType		      "Connection"
+	      SrcBlock		      "Universal"
+	      SrcPort		      LConn2
+	      Points		      [0, -23; 70, 0]
+	      DstBlock		      "Joint Sensor"
+	      DstPort		      LConn1
+	    }
+	    Line {
+	      LineType		      "Connection"
+	      SrcBlock		      "Universal"
+	      SrcPort		      RConn2
+	      Points		      [0, 25; 60, 0]
+	      DstBlock		      "Y"
+	      DstPort		      RConn1
+	    }
+	    Line {
+	      LineType		      "Connection"
+	      SrcBlock		      "tau_2"
+	      SrcPort		      RConn1
+	      Points		      [-35, 0]
+	      DstBlock		      "Revolute1"
+	      DstPort		      RConn2
+	    }
+	    Line {
+	      LineType		      "Connection"
+	      SrcBlock		      "Elbow"
+	      SrcPort		      LConn1
+	      Points		      [-37, 0; 0, 34; -23, 0]
+	      DstBlock		      "Revolute1"
+	      DstPort		      LConn2
+	    }
+	    Line {
+	      LineType		      "Connection"
+	      SrcBlock		      "theta"
+	      SrcPort		      RConn1
+	      DstBlock		      "Universal"
+	      DstPort		      RConn3
+	    }
+	    Line {
+	      LineType		      "Connection"
+	      SrcBlock		      "Joint Sensor2"
+	      SrcPort		      LConn1
+	      DstBlock		      "Universal"
+	      DstPort		      LConn3
+	    }
+	    Line {
+	      LineType		      "Connection"
+	      SrcBlock		      "Vertical, static arm"
+	      SrcPort		      RConn1
+	      Points		      [-40, 0]
+	      DstBlock		      "Universal"
+	      DstPort		      LConn4
+	    }
+	    Line {
+	      LineType		      "Connection"
+	      SrcBlock		      "Revolute1"
+	      SrcPort		      LConn3
+	      Points		      [40, 0]
+	      DstBlock		      "Horizontal, static arm"
+	      DstPort		      RConn1
+	    }
+	    Line {
+	      SrcBlock		      "Demux"
+	      SrcPort		      3
+	      Points		      [-193, 0; 0, -345]
+	      DstBlock		      "Y"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Demux"
+	      SrcPort		      2
+	      DstBlock		      "tau_2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Joint Sensor"
+	      SrcPort		      1
+	      Points		      [29, 0]
+	      Branch {
+		Points			[0, -155]
+		DstBlock		"Demux1"
+		DstPort			1
+	      }
+	      Branch {
+		DstBlock		"Scope"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Demux"
+	      SrcPort		      1
+	      Points		      [-174, 0; 0, -350]
+	      DstBlock		      "theta"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Torques\n"
+	      SrcPort		      1
+	      DstBlock		      "Demux"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Mux"
+	      SrcPort		      1
+	      Points		      [100, 0; 0, 30]
+	      DstBlock		      "Angle positions"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Demux1"
+	      SrcPort		      1
+	      Points		      [217, 0; 0, 90]
+	      DstBlock		      "Mux"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Demux2"
+	      SrcPort		      1
+	      Points		      [34, 0; 0, -390]
+	      DstBlock		      "Mux"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Demux3"
+	      SrcPort		      1
+	      Points		      [17, 0; 0, -110]
+	      DstBlock		      "Mux"
+	      DstPort		      3
+	    }
+	    Line {
+	      LineType		      "Connection"
+	      SrcBlock		      "Body Sensor"
+	      SrcPort		      LConn1
+	      Points		      [11, 0; 0, 100]
+	      DstBlock		      "Forearm"
+	      DstPort		      LConn1
+	    }
+	    Line {
+	      SrcBlock		      "Body Sensor"
+	      SrcPort		      1
+	      Points		      [-16, 0; 0, -45]
+	      DstBlock		      "Mux1"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Mux1"
+	      SrcPort		      1
+	      DstBlock		      "CG positions\n"
+	      DstPort		      1
+	    }
+	    Line {
+	      LineType		      "Connection"
+	      SrcBlock		      "Upper Arm"
+	      SrcPort		      LConn1
+	      Points		      [0, -26; -75, 0]
+	      DstBlock		      "Body Sensor1"
+	      DstPort		      LConn1
+	    }
+	    Line {
+	      SrcBlock		      "Body Sensor1"
+	      SrcPort		      1
+	      Points		      [-7, 0; 0, 55]
+	      DstBlock		      "Mux1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Mux2"
+	      SrcPort		      1
+	      DstBlock		      "Torques"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Demux2"
+	      SrcPort		      3
+	      Points		      [16, 0; 0, 35; 294, 0; 0, -330]
+	      DstBlock		      "Mux2"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Demux3"
+	      SrcPort		      3
+	      Points		      [15, 0; 0, 27; 241, 0; 0, -42]
+	      DstBlock		      "Mux2"
+	      DstPort		      3
+	    }
+	    Line {
+	      LineType		      "Connection"
+	      SrcBlock		      "Body Sensor2"
+	      SrcPort		      LConn1
+	      Points		      [-18, 0; 0, 95]
+	      DstBlock		      "Forearm"
+	      DstPort		      RConn1
+	    }
+	    Line {
+	      SrcBlock		      "Body Sensor2"
+	      SrcPort		      1
+	      DstBlock		      "End Position"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Demux1"
+	      SrcPort		      3
+	      Points		      [112, 0; 0, 185]
+	      DstBlock		      "Mux2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Elbow"
+	      SrcPort		      1
+	      DstBlock		      "Demux2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Joint Sensor2"
+	      SrcPort		      1
+	      DstBlock		      "Demux3"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Mux3"
+	      SrcPort		      1
+	      Points		      [100, 0; 0, 30]
+	      DstBlock		      "Anglular Velocities"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Demux1"
+	      SrcPort		      2
+	      Points		      [106, 0; 0, -5]
+	      DstBlock		      "Mux3"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Demux3"
+	      SrcPort		      2
+	      Points		      [26, 0; 0, -205]
+	      DstBlock		      "Mux3"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "Demux2"
+	      SrcPort		      2
+	      Points		      [27, 0; 0, 38; 274, 0; 0, -523]
+	      DstBlock		      "Mux3"
+	      DstPort		      2
+	    }
+	    Annotation {
+	      SID		      "304"
+	      Name		      "theta_2"
+	      Position		      [968, 751]
+	      ZOrder		      -1
+	    }
+	    Annotation {
+	      SID		      "303"
+	      Name		      "theta_1"
+	      Position		      [972, 721]
+	      ZOrder		      -2
+	    }
+	    Annotation {
+	      SID		      "302"
+	      Name		      "Out Of Plane"
+	      Position		      [964, 783]
+	      ZOrder		      -3
+	    }
+	  }
+	}
+	Block {
 	  BlockType		  Sum
 	  Name			  "Sum1"
 	  SID			  "157"
@@ -1831,8 +3187,8 @@ Model {
 	  MaskHideContents	  off
 	  System {
 	    Name		    "VAS"
-	    Location		    [1913, 24, 3867, 1301]
-	    Open		    off
+	    Location		    [2016, 186, 3595, 1114]
+	    Open		    on
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -2701,13 +4057,25 @@ Model {
 	      BlockType		      Constant
 	      Name		      "Constant"
 	      SID		      "61"
-	      Position		      [340, 605, 420, 625]
+	      Position		      [340, 655, 420, 675]
 	      ZOrder		      -8
 	      BlockMirror	      on
-	      BackgroundColor	      "green"
+	      BackgroundColor	      "[0.000000, 0.819608, 0.000000]"
 	      NamePlacement	      "alternate"
 	      ShowName		      off
 	      Value		      "lslackVAS"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant1"
+	      SID		      "263"
+	      Position		      [340, 605, 420, 625]
+	      ZOrder		      3
+	      BlockMirror	      on
+	      BackgroundColor	      "[0.000000, 0.819608, 0.000000]"
+	      NamePlacement	      "alternate"
+	      ShowName		      off
+	      Value		      "0.6*loptVAS"
 	    }
 	    Block {
 	      BlockType		      Reference
@@ -2794,7 +4162,7 @@ Model {
 	      MaskHideContents	      off
 	      System {
 		Name			"PE force-length relation"
-		Location		[131, 45, 1294, 1160]
+		Location		[2016, 186, 3595, 1114]
 		Open			off
 		ModelBrowserVisibility	on
 		ModelBrowserWidth	200
@@ -2981,7 +4349,7 @@ Model {
 	      MaskHideContents	      off
 	      System {
 		Name			"SE force-length relation"
-		Location		[131, 45, 1294, 1160]
+		Location		[2016, 186, 3595, 1114]
 		Open			off
 		ModelBrowserVisibility	on
 		ModelBrowserWidth	200
@@ -3171,11 +4539,11 @@ Model {
 	    }
 	    Block {
 	      BlockType		      Sum
-	      Name		      "Sum2"
-	      SID		      "89"
+	      Name		      "Sum1"
+	      SID		      "261"
 	      Ports		      [2, 1]
-	      Position		      [285, 605, 305, 625]
-	      ZOrder		      -16
+	      Position		      [295, 655, 315, 675]
+	      ZOrder		      1
 	      BlockMirror	      on
 	      NamePlacement	      "alternate"
 	      ShowName		      off
@@ -3356,10 +4724,10 @@ Model {
 	      Name		      "lmtc"
 	      SrcBlock		      "lmtc [m]"
 	      SrcPort		      1
-	      Points		      [10, 0]
+	      Points		      [17, 0]
 	      Branch {
-		Points			[0, 545; 220, 0]
-		DstBlock		"Sum2"
+		Points			[0, 570]
+		DstBlock		"Sum1"
 		DstPort			2
 	      }
 	      Branch {
@@ -3383,15 +4751,9 @@ Model {
 	      DstPort		      1
 	    }
 	    Line {
-	      SrcBlock		      "Sum2"
-	      SrcPort		      1
-	      DstBlock		      "Integrator"
-	      DstPort		      2
-	    }
-	    Line {
 	      SrcBlock		      "Constant"
 	      SrcPort		      1
-	      DstBlock		      "Sum2"
+	      DstBlock		      "Sum1"
 	      DstPort		      1
 	    }
 	    Line {
@@ -3459,6 +4821,13 @@ Model {
 		DstBlock		"A"
 		DstPort			1
 	      }
+	    }
+	    Line {
+	      SrcBlock		      "Sum1"
+	      SrcPort		      1
+	      Points		      [-14, 0; 0, -50]
+	      DstBlock		      "Integrator"
+	      DstPort		      2
 	    }
 	    Annotation {
 	      SID		      "100"
@@ -3603,7 +4972,7 @@ Model {
 	  UpdateFromCAD		  "off"
 	  ClassName		  "Body"
 	  DialogClass		  "MechanicalBodyBlock"
-	  Mass			  "m2"
+	  Mass			  "3"
 	  MassUnits		  "kg"
 	  InertiaUnits		  "kg*m^2"
 	  Inertia		  "eye(3)"
@@ -3667,24 +5036,87 @@ Model {
 	  CS20Rot		  "[]"
 	}
 	Block {
+	  BlockType		  Scope
+	  Name			  "lm"
+	  SID			  "258"
+	  Ports			  [1]
+	  Position		  [1025, 364, 1055, 396]
+	  ZOrder		  55
+	  Floating		  off
+	  Location		  [171, 537, 644, 951]
+	  Open			  on
+	  NumInputPorts		  "1"
+	  List {
+	    ListType		    AxesTitles
+	    axes1		    "%<SignalLabel>"
+	  }
+	  List {
+	    ListType		    ScopeGraphics
+	    FigureColor		    "[0.501960784313725 0.501960784313725 0.501960784313725]"
+	    AxesColor		    "[0 0 0]"
+	    AxesTickColor	    "[1 1 1]"
+	    LineColors		    "[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]"
+	    LineStyles		    "-|-|-|-|-|-"
+	    LineWidths		    "[0.5 0.5 0.5 0.5 0.5 0.5]"
+	    MarkerStyles	    "none|none|none|none|none|none"
+	  }
+	  ShowLegends		  off
+	  SaveName		  "ScopeData5"
+	  DataFormat		  "StructureWithTime"
+	  LimitDataPoints	  off
+	  SampleTime		  "0"
+	}
+	Block {
+	  BlockType		  Scope
+	  Name			  "lse\n\n"
+	  SID			  "259"
+	  Ports			  [1]
+	  Position		  [1030, 449, 1060, 481]
+	  ZOrder		  56
+	  Floating		  off
+	  Location		  [630, 527, 1160, 942]
+	  Open			  on
+	  NumInputPorts		  "1"
+	  List {
+	    ListType		    AxesTitles
+	    axes1		    "%<SignalLabel>"
+	  }
+	  List {
+	    ListType		    ScopeGraphics
+	    FigureColor		    "[0.501960784313725 0.501960784313725 0.501960784313725]"
+	    AxesColor		    "[0 0 0]"
+	    AxesTickColor	    "[1 1 1]"
+	    LineColors		    "[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]"
+	    LineStyles		    "-|-|-|-|-|-"
+	    LineWidths		    "[0.5 0.5 0.5 0.5 0.5 0.5]"
+	    MarkerStyles	    "none|none|none|none|none|none"
+	  }
+	  ShowLegends		  off
+	  TimeRange		  "10"
+	  SaveName		  "ScopeData8"
+	  DataFormat		  "StructureWithTime"
+	  LimitDataPoints	  off
+	  SampleTime		  "0"
+	}
+	Block {
 	  BlockType		  Fcn
 	  Name			  "map (-pi,pi]\nto [0,2pi)"
 	  SID			  "114"
 	  Position		  [400, 429, 430, 451]
 	  ZOrder		  23
-	  BackgroundColor	  "magenta"
+	  BackgroundColor	  "[1.000000, 0.258824, 0.819608]"
 	  NamePlacement		  "alternate"
 	  ShowName		  off
-	  Expr			  "u*(u>=0) + (2*pi+u)*(u<0)"
+	  Expr			  "u*(u>=-eps) + (2*pi+u)*(u<-eps)"
 	}
 	Block {
 	  BlockType		  SubSystem
 	  Name			  "muscle attachment"
 	  SID			  "116"
 	  Ports			  [1, 2]
-	  Position		  [630, 391, 690, 544]
+	  Position		  [630, 390, 690, 545]
 	  ZOrder		  22
-	  ForegroundColor	  "red"
+	  ForegroundColor	  "[0.901961, 0.000000, 0.000000]"
 	  MinAlgLoopOccurrences	  off
 	  PropExecContextOutsideSubsystem off
 	  RTWSystemCode		  "Auto"
@@ -3694,7 +5126,7 @@ Model {
 	  MaskHideContents	  off
 	  System {
 	    Name		    "muscle attachment"
-	    Location		    [1978, 24, 3916, 1265]
+	    Location		    [2066, 340, 3645, 1268]
 	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -3706,54 +5138,148 @@ Model {
 	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
-	    ZoomFactor		    "150"
+	    ZoomFactor		    "125"
 	    Block {
 	      BlockType		      Inport
-	      Name		      "angle [rad]"
-	      SID		      "117"
-	      Position		      [90, 241, 120, 259]
-	      ZOrder		      -1
+	      Name		      "phi23 [rad]"
+	      SID		      "193"
+	      Position		      [780, 911, 810, 929]
+	      ZOrder		      47
 	      BackgroundColor	      "darkGreen"
 	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Constant
 	      Name		      "Constant"
-	      SID		      "118"
-	      Position		      [120, 113, 265, 147]
-	      ZOrder		      -2
+	      SID		      "194"
+	      Position		      [770, 523, 915, 557]
+	      ZOrder		      34
 	      BackgroundColor	      "green"
 	      ShowName		      off
 	      Value		      "lslackVAS+loptVAS"
 	    }
 	    Block {
 	      BlockType		      Constant
-	      Name		      "Constant1"
-	      SID		      "119"
-	      Position		      [155, 323, 220, 347]
-	      ZOrder		      -3
+	      Name		      "Constant3"
+	      SID		      "195"
+	      Position		      [760, 813, 825, 837]
+	      ZOrder		      46
 	      BackgroundColor	      "green"
 	      ShowName		      off
-	      Value		      ".03"
+	      Value		      "phirefVAS"
 	    }
 	    Block {
 	      BlockType		      Constant
-	      Name		      "Constant2"
-	      SID		      "120"
-	      Position		      [155, 288, 220, 312]
-	      ZOrder		      -4
+	      Name		      "Constant4"
+	      SID		      "196"
+	      Position		      [760, 858, 825, 882]
+	      ZOrder		      45
 	      BackgroundColor	      "green"
 	      ShowName		      off
-	      Value		      "90*pi/180"
+	      Value		      "phimaxVAS"
 	    }
 	    Block {
-	      BlockType		      Product
-	      Name		      "Product"
-	      SID		      "122"
-	      Ports		      [2, 1]
-	      Position		      [380, 238, 400, 287]
-	      ZOrder		      -5
+	      BlockType		      Demux
+	      Name		      "Demux"
+	      SID		      "197"
+	      Ports		      [1, 2]
+	      Position		      [1220, 886, 1225, 924]
+	      ZOrder		      44
+	      BackgroundColor	      "black"
 	      ShowName		      off
+	      Outputs		      "2"
+	      DisplayOption	      "bar"
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "Gain2"
+	      SID		      "198"
+	      Position		      [1120, 884, 1195, 926]
+	      ZOrder		      43
+	      BackgroundColor	      "green"
+	      ShowName		      off
+	      Gain		      "rVAS"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "Gain4"
+	      SID		      "199"
+	      Position		      [1213, 745, 1287, 795]
+	      ZOrder		      42
+	      BlockRotation	      270
+	      BackgroundColor	      "green"
+	      ShowName		      off
+	      Gain		      "-rhoVAS"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Minimum moment arm"
+	      SID		      "255"
+	      Position		      [1255, 950, 1285, 980]
+	      ZOrder		      105
+	      Value		      "0.015"
+	    }
+	    Block {
+	      BlockType		      Mux
+	      Name		      "Mux"
+	      SID		      "200"
+	      Ports		      [2, 1]
+	      Position		      [1090, 886, 1095, 924]
+	      ZOrder		      41
+	      ShowName		      off
+	      Inputs		      "2"
+	      DisplayOption	      "bar"
+	    }
+	    Block {
+	      BlockType		      Scope
+	      Name		      "Scope2"
+	      SID		      "253"
+	      Ports		      [2]
+	      Position		      [1090, 751, 1120, 784]
+	      ZOrder		      103
+	      Floating		      off
+	      Location		      [378, 368, 1164, 1015]
+	      Open		      off
+	      NumInputPorts	      "2"
+	      List {
+		ListType		AxesTitles
+		axes1			"%<SignalLabel>"
+		axes2			"%<SignalLabel>"
+	      }
+	      List {
+		ListType		ScopeGraphics
+		FigureColor		"[0.5 0.5 0.5]"
+		AxesColor		"[0 0 0]"
+		AxesTickColor		"[1 1 1]"
+		LineColors		"[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]"
+		LineStyles		"-|-|-|-|-|-"
+		LineWidths		"[0.5 0.5 0.5 0.5 0.5 0.5]"
+		MarkerStyles		"none|none|none|none|none|none"
+	      }
+	      ShowLegends	      off
+	      YMin		      "0.906308~-0.9"
+	      YMax		      "0.906308~0.5"
+	      SaveName		      "ScopeData7"
+	      DataFormat	      "StructureWithTime"
+	      LimitDataPoints	      off
+	      SampleTime	      "0"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum1"
+	      SID		      "201"
+	      Ports		      [2, 1]
+	      Position		      [880, 815, 900, 835]
+	      ZOrder		      40
+	      ShowName		      off
+	      IconShape		      "round"
+	      Inputs		      "|+-"
 	      InputSameDT	      off
 	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
 	      SaturateOnIntegerOverflow	off
@@ -3761,13 +5287,41 @@ Model {
 	    Block {
 	      BlockType		      Sum
 	      Name		      "Sum2"
-	      SID		      "123"
+	      SID		      "254"
 	      Ports		      [2, 1]
-	      Position		      [270, 240, 290, 260]
-	      ZOrder		      -6
+	      Position		      [1300, 905, 1320, 925]
+	      ZOrder		      104
 	      ShowName		      off
 	      IconShape		      "round"
-	      Inputs		      "|+-"
+	      Inputs		      "|++"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum3"
+	      SID		      "202"
+	      Ports		      [2, 1]
+	      Position		      [880, 910, 900, 930]
+	      ZOrder		      39
+	      ShowName		      off
+	      IconShape		      "round"
+	      Inputs		      "-+|"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum4"
+	      SID		      "203"
+	      Ports		      [2, 1]
+	      Position		      [1015, 850, 1035, 870]
+	      ZOrder		      38
+	      ShowName		      off
+	      IconShape		      "round"
+	      Inputs		      "+-"
 	      InputSameDT	      off
 	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
 	      SaturateOnIntegerOverflow	off
@@ -3775,10 +5329,10 @@ Model {
 	    Block {
 	      BlockType		      Sum
 	      Name		      "Sum5"
-	      SID		      "124"
+	      SID		      "204"
 	      Ports		      [2, 1]
-	      Position		      [420, 120, 440, 140]
-	      ZOrder		      -7
+	      Position		      [1070, 530, 1090, 550]
+	      ZOrder		      33
 	      ShowName		      off
 	      IconShape		      "round"
 	      Inputs		      "|+-"
@@ -3787,20 +5341,141 @@ Model {
 	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
+	      BlockType		      Scope
+	      Name		      "angle terms\n"
+	      SID		      "216"
+	      Ports		      [1]
+	      Position		      [1390, 784, 1420, 816]
+	      ZOrder		      53
+	      Floating		      off
+	      Location		      [78, 197, 863, 436]
+	      Open		      on
+	      NumInputPorts	      "1"
+	      List {
+		ListType		AxesTitles
+		axes1			"%<SignalLabel>"
+	      }
+	      List {
+		ListType		ScopeGraphics
+		FigureColor		"[0.5 0.5 0.5]"
+		AxesColor		"[0 0 0]"
+		AxesTickColor		"[1 1 1]"
+		LineColors		"[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]"
+		LineStyles		"-|-|-|-|-|-"
+		LineWidths		"[0.5 0.5 0.5 0.5 0.5 0.5]"
+		MarkerStyles		"none|none|none|none|none|none"
+	      }
+	      ShowLegends	      off
+	      TimeRange		      "8"
+	      YMin		      "-0.03"
+	      YMax		      "0.03"
+	      SaveName		      "ScopeData6"
+	      DataFormat	      "StructureWithTime"
+	      SampleTime	      "0"
+	    }
+	    Block {
+	      BlockType		      Trigonometry
+	      Name		      "length change term"
+	      SID		      "205"
+	      Ports		      [1, 1]
+	      Position		      [950, 878, 995, 912]
+	      ZOrder		      37
+	    }
+	    Block {
+	      BlockType		      Scope
+	      Name		      "lmtu\n"
+	      SID		      "215"
+	      Ports		      [1]
+	      Position		      [1205, 534, 1235, 566]
+	      ZOrder		      52
+	      Floating		      off
+	      Location		      [882, 223, 1206, 462]
+	      Open		      on
+	      NumInputPorts	      "1"
+	      ZoomMode		      "xonly"
+	      List {
+		ListType		AxesTitles
+		axes1			"%<SignalLabel>"
+	      }
+	      List {
+		ListType		ScopeGraphics
+		FigureColor		"[0.5 0.5 0.5]"
+		AxesColor		"[0 0 0]"
+		AxesTickColor		"[1 1 1]"
+		LineColors		"[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]"
+		LineStyles		"-|-|-|-|-|-"
+		LineWidths		"[0.5 0.5 0.5 0.5 0.5 0.5]"
+		MarkerStyles		"none|none|none|none|none|none"
+	      }
+	      ShowLegends	      off
+	      TimeRange		      "4"
+	      SaveName		      "ScopeData5"
+	      DataFormat	      "StructureWithTime"
+	      SampleTime	      "0"
+	    }
+	    Block {
+	      BlockType		      Scope
+	      Name		      "lmtu\n1"
+	      SID		      "260"
+	      Ports		      [1]
+	      Position		      [1360, 629, 1390, 661]
+	      ZOrder		      106
+	      Floating		      off
+	      Location		      [868, 538, 1192, 777]
+	      Open		      off
+	      NumInputPorts	      "1"
+	      List {
+		ListType		AxesTitles
+		axes1			"%<SignalLabel>"
+	      }
+	      List {
+		ListType		ScopeGraphics
+		FigureColor		"[0.5 0.5 0.5]"
+		AxesColor		"[0 0 0]"
+		AxesTickColor		"[1 1 1]"
+		LineColors		"[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]"
+		LineStyles		"-|-|-|-|-|-"
+		LineWidths		"[0.5 0.5 0.5 0.5 0.5 0.5]"
+		MarkerStyles		"none|none|none|none|none|none"
+	      }
+	      ShowLegends	      off
+	      SaveName		      "ScopeData9"
+	      DataFormat	      "StructureWithTime"
+	      SampleTime	      "0"
+	    }
+	    Block {
+	      BlockType		      Trigonometry
+	      Name		      "offset correction term"
+	      SID		      "206"
+	      Ports		      [1, 1]
+	      Position		      [950, 809, 995, 841]
+	      ZOrder		      36
+	      NamePlacement	      "alternate"
+	    }
+	    Block {
+	      BlockType		      Trigonometry
+	      Name		      "variable lever term"
+	      SID		      "207"
+	      Ports		      [1, 1]
+	      Position		      [950, 945, 995, 975]
+	      ZOrder		      35
+	      Operator		      "cos"
+	    }
+	    Block {
 	      BlockType		      Outport
 	      Name		      "lmtu [m]"
-	      SID		      "125"
-	      Position		      [480, 123, 510, 137]
-	      ZOrder		      -8
+	      SID		      "208"
+	      Position		      [1130, 563, 1160, 577]
+	      ZOrder		      32
 	      BackgroundColor	      "darkGreen"
 	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Outport
 	      Name		      "lever [m]"
-	      SID		      "126"
-	      Position		      [475, 328, 505, 342]
-	      ZOrder		      -9
+	      SID		      "209"
+	      Position		      [1420, 908, 1450, 922]
+	      ZOrder		      48
 	      BackgroundColor	      "darkGreen"
 	      Port		      "2"
 	      IconDisplay	      "Port number"
@@ -3814,54 +5489,171 @@ Model {
 	    Line {
 	      SrcBlock		      "Sum5"
 	      SrcPort		      1
-	      DstBlock		      "lmtu [m]"
-	      DstPort		      1
+	      Points		      [14, 0]
+	      Branch {
+		Points			[0, -22; 57, 0; 0, 32]
+		DstBlock		"lmtu\n"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 30]
+		DstBlock		"lmtu [m]"
+		DstPort			1
+	      }
 	    }
 	    Line {
-	      SrcBlock		      "Product"
+	      SrcBlock		      "Gain4"
 	      SrcPort		      1
-	      Points		      [25, 0]
-	      DstBlock		      "Sum5"
+	      Points		      [0, -95]
+	      Branch {
+		Points			[0, -20; -170, 0]
+		DstBlock		"Sum5"
+		DstPort			2
+	      }
+	      Branch {
+		DstBlock		"lmtu\n1"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "phi23 [rad]"
+	      SrcPort		      1
+	      DstBlock		      "Sum3"
 	      DstPort		      2
 	    }
 	    Line {
-	      SrcBlock		      "angle [rad]"
+	      SrcBlock		      "Sum3"
 	      SrcPort		      1
+	      Points		      [10, 0]
+	      Branch {
+		Points			[0, 40]
+		DstBlock		"variable lever term"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, -25]
+		DstBlock		"length change term"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Constant4"
+	      SrcPort		      1
+	      Points		      [60, 0]
+	      Branch {
+		DstBlock		"Sum3"
+		DstPort			1
+	      }
+	      Branch {
+		DstBlock		"Sum1"
+		DstPort			2
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Sum1"
+	      SrcPort		      1
+	      DstBlock		      "offset correction term"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Constant3"
+	      SrcPort		      1
+	      DstBlock		      "Sum1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "offset correction term"
+	      SrcPort		      1
+	      Points		      [25, 0; 0, 1]
+	      Branch {
+		Points			[32, 0; 0, -66]
+		DstBlock		"Scope2"
+		DstPort			1
+	      }
+	      Branch {
+		DstBlock		"Sum4"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "length change term"
+	      SrcPort		      1
+	      Points		      [25, 0]
+	      Branch {
+		DstBlock		"Sum4"
+		DstPort			2
+	      }
+	      Branch {
+		Points			[43, 0; 0, -120]
+		DstBlock		"Scope2"
+		DstPort			2
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "variable lever term"
+	      SrcPort		      1
+	      Points		      [75, 0]
+	      DstBlock		      "Mux"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Mux"
+	      SrcPort		      1
+	      DstBlock		      "Gain2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Gain2"
+	      SrcPort		      1
+	      Points		      [4, 0]
+	      Branch {
+		Points			[0, -87; 171, 0]
+		DstBlock		"angle terms\n"
+		DstPort			1
+	      }
+	      Branch {
+		DstBlock		"Demux"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Demux"
+	      SrcPort		      1
+	      Points		      [20, 0]
+	      DstBlock		      "Gain4"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Demux"
+	      SrcPort		      2
 	      DstBlock		      "Sum2"
 	      DstPort		      1
 	    }
 	    Line {
-	      SrcBlock		      "Constant2"
+	      SrcBlock		      "Minimum moment arm"
 	      SrcPort		      1
-	      Points		      [55, 0]
+	      Points		      [20, 0]
 	      DstBlock		      "Sum2"
 	      DstPort		      2
 	    }
 	    Line {
 	      SrcBlock		      "Sum2"
 	      SrcPort		      1
-	      DstBlock		      "Product"
+	      DstBlock		      "lever [m]"
 	      DstPort		      1
 	    }
 	    Line {
-	      SrcBlock		      "Constant1"
+	      SrcBlock		      "Sum4"
 	      SrcPort		      1
-	      Points		      [110, 0]
-	      Branch {
-		Points			[0, -60]
-		DstBlock		"Product"
-		DstPort			2
-	      }
-	      Branch {
-		DstBlock		"lever [m]"
-		DstPort			1
-	      }
+	      Points		      [35, 0]
+	      DstBlock		      "Mux"
+	      DstPort		      1
 	    }
 	    Annotation {
-	      SID		      "127"
+	      SID		      "210"
 	      Name		      "Muscle Attachment"
-	      Position		      [333, 54]
-	      ZOrder		      -1
+	      Position		      [983, 464]
+	      ZOrder		      -2
 	      FontName		      "Arial"
 	      FontSize		      20
 	    }
@@ -3921,7 +5713,7 @@ Model {
 	}
 	Line {
 	  LineType		  "Connection"
-	  SrcBlock		  "Left Hip\nActuator"
+	  SrcBlock		  "Biceps\nActuator"
 	  SrcPort		  RConn1
 	  Points		  [-2, 0; 0, -30]
 	  DstBlock		  "elbow"
@@ -3987,15 +5779,30 @@ Model {
 	  SrcBlock		  "VAS"
 	  SrcPort		  1
 	  Points		  [55, 0]
-	  DstBlock		  "Product6"
-	  DstPort		  2
+	  Branch {
+	    Points		    [0, -140; -271, 0; 0, 445]
+	    DstBlock		    "F and T"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Product6"
+	    DstPort		    2
+	  }
 	}
 	Line {
 	  SrcBlock		  "muscle attachment"
 	  SrcPort		  2
-	  Points		  [160, 0]
-	  DstBlock		  "Product6"
-	  DstPort		  1
+	  Points		  [155, 0]
+	  Branch {
+	    Points		    [0, -271; -308, 0; 0, 166]
+	    DstBlock		    "Scope4"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [5, 0]
+	    DstBlock		    "Product6"
+	    DstPort		    1
+	  }
 	}
 	Line {
 	  SrcBlock		  "Stimulation"
@@ -4005,53 +5812,68 @@ Model {
 	  DstPort		  1
 	}
 	Line {
-	  SrcBlock		  "L Knee Joint Limits"
+	  SrcBlock		  "Elbow Joint Limits"
 	  SrcPort		  1
-	  DstBlock		  "Sum1"
-	  DstPort		  1
+	  Points		  [-4, 0]
+	  Branch {
+	    Points		    [0, 25; -102, 0; 0, -175]
+	    DstBlock		    "Scope"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Sum1"
+	    DstPort		    1
+	  }
 	}
 	Line {
 	  SrcBlock		  "Demux1"
 	  SrcPort		  1
 	  Points		  [-35, 0; 0, 30]
-	  DstBlock		  "L Knee Joint Limits"
+	  DstBlock		  "Elbow Joint Limits"
 	  DstPort		  1
 	}
 	Line {
 	  SrcBlock		  "Demux1"
 	  SrcPort		  2
 	  Points		  [0, 40]
-	  DstBlock		  "L Knee Joint Limits"
+	  DstBlock		  "Elbow Joint Limits"
 	  DstPort		  2
 	}
 	Line {
 	  SrcBlock		  "Mux"
 	  SrcPort		  1
-	  Points		  [123, 0; 0, 243; 93, 0]
-	  Branch {
-	    Points		    [0, -83]
-	    DstBlock		    "Scope"
-	    DstPort		    1
-	  }
-	  Branch {
-	    Points		    [284, 0]
-	    DstBlock		    "Demux1"
-	    DstPort		    1
-	  }
+	  Points		  [123, 0; 0, 229; 377, 0]
+	  DstBlock		  "Demux1"
+	  DstPort		  1
 	}
 	Line {
 	  SrcBlock		  "Sum1"
 	  SrcPort		  1
-	  Points		  [-206, 0; 0, -265]
-	  DstBlock		  "Left Hip\nActuator"
-	  DstPort		  1
+	  Points		  [-206, 0; 0, -130]
+	  Branch {
+	    Points		    [0, -135]
+	    DstBlock		    "Biceps\nActuator"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "F and T"
+	    DstPort		    2
+	  }
 	}
 	Line {
 	  SrcBlock		  "Product6"
 	  SrcPort		  1
-	  Points		  [0, 105; 239, 0; 0, 199; -339, 0]
-	  DstBlock		  "Sum1"
-	  DstPort		  2
+	  Points		  [0, 105; 239, 0; 0, 199; -336, 0]
+	  Branch {
+	    Points		    [0, 101; -97, 0; 0, -45]
+	    DstBlock		    "Scope2"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [-3, 0]
+	    DstBlock		    "Sum1"
+	    DstPort		    2
+	  }
 	}
 	Line {
 	  SrcBlock		  "Left Hip\nSensor"
@@ -4072,9 +5894,16 @@ Model {
 	  Branch {
 	    Points		    [22, 0]
 	    Branch {
-	      Points		      [0, 30]
-	      DstBlock		      "muscle attachment"
-	      DstPort		      1
+	      Points		      [0, 30; 58, 0]
+	      Branch {
+		Points			[0, -55]
+		DstBlock		"Scope4"
+		DstPort			2
+	      }
+	      Branch {
+		DstBlock		"muscle attachment"
+		DstPort			1
+	      }
 	    }
 	    Branch {
 	      Points		      [0, -36; -113, 0; 0, -114]
@@ -4104,35 +5933,65 @@ Model {
 	  DstBlock		  "end_effector_pos"
 	  DstPort		  1
 	}
+	Line {
+	  SrcBlock		  "VAS"
+	  SrcPort		  2
+	  DstBlock		  "lm"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "VAS"
+	  SrcPort		  4
+	  Points		  [134, 0; 0, 45]
+	  DstBlock		  "lse\n\n"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Subsystem"
+	  SrcPort		  1
+	  Points		  [25, 0]
+	  DstBlock		  "Demux"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  2
+	  Points		  [0, -77; -199, 0]
+	}
       }
-    }
-    Line {
-      SrcBlock		      "From\nWorkspace"
-      SrcPort		      1
-      DstBlock		      "Subsystem"
-      DstPort		      1
     }
     Line {
       SrcBlock		      "Subsystem"
       SrcPort		      1
-      Points		      [55, 0; 0, -30]
+      Points		      [140, 0; 0, -20]
       DstBlock		      "Actual Torques on the Arm"
       DstPort		      1
     }
     Line {
       SrcBlock		      "Subsystem"
       SrcPort		      2
-      Points		      [55, 0; 0, 25]
+      Points		      [140, 0; 0, 35]
       DstBlock		      "End Effector Position"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Constant3"
+      SrcPort		      1
+      DstBlock		      "Subsystem"
       DstPort		      1
     }
   }
 }
 MatData {
-  NumRecords		  1
+  NumRecords		  2
   DataRecord {
     Tag			    DataTag0
     Data		    "  %)30     .    4     8    (    !          %    \"     $    ;     0         0    &P   &%R;5]M=7-C;&4O4W"
     "5B<WES=&5M+T=R;W5N9       "
+  }
+  DataRecord {
+    Tag			    DataTag1
+    Data		    "  %)30     .    6     8    (    !          %    \"     $    E     0         0    )0   &%R;5]M=7-C;&4O4W"
+    "5B<WES=&5M+U-U8G-Y<W1E;2]'<F]U;F0    "
   }
 }
