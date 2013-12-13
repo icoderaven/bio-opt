@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.49"
+    ComputedModelVersion    "1.52"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -31,7 +31,7 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [2140.0, 24.0, 1707.0, 1216.0]
+      Location		      [287.0, 123.0, 1755.0, 1324.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -56,7 +56,7 @@ Model {
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "266"
-	  Extents		  [1460.0, 1032.0]
+	  Extents		  [1508.0, 1140.0]
 	  ZoomFactor		  [1.0]
 	  Offset		  [137.662109375, -34.684273022316916]
 	}
@@ -65,25 +65,25 @@ Model {
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "1"
-	  Extents		  [1460.0, 1032.0]
+	  Extents		  [1508.0, 1140.0]
 	  ZoomFactor		  [1.0]
 	  Offset		  [25.209602513681943, 27.29378876331657]
 	}
 	Object {
 	  $ObjectID		  7
-	  IsActive		  [1]
-	  ViewObjType		  "SimulinkTopLevel"
-	  LoadSaveID		  "0"
-	  Extents		  [1460.0, 1032.0]
+	  IsActive		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "162"
+	  Extents		  [1508.0, 1140.0]
 	  ZoomFactor		  [1.0]
-	  Offset		  [0.0, 0.0]
+	  Offset		  [415.0, 81.0]
 	}
 	Object {
 	  $ObjectID		  8
-	  IsActive		  [0]
+	  IsActive		  [1]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "142"
-	  Extents		  [1460.0, 1032.0]
+	  Extents		  [1508.0, 1140.0]
 	  ZoomFactor		  [1.0]
 	  Offset		  [-1.673828125, -94.600000000000023]
 	}
@@ -100,9 +100,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "icoderaven"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Thu Dec 12 21:42:05 2013"
-  RTWModifiedTimeStamp	  308784573
-  ModelVersionFormat	  "1.%<AutoIncrement:49>"
+  LastModifiedDate	  "Thu Dec 12 22:51:07 2013"
+  RTWModifiedTimeStamp	  308789465
+  ModelVersionFormat	  "1.%<AutoIncrement:52>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -1111,8 +1111,8 @@ Model {
   }
   System {
     Name		    "arm_muscle"
-    Location		    [2140, 24, 3847, 1240]
-    Open		    on
+    Location		    [2124, 24, 3847, 1276]
+    Open		    off
     ModelBrowserVisibility  on
     ModelBrowserWidth	    200
     ScreenColor		    "white"
@@ -1224,8 +1224,8 @@ Model {
       MaskHideContents	      off
       System {
 	Name			"Subsystem"
-	Location		[2428, 157, 4119, 1337]
-	Open			off
+	Location		[2092, 24, 3847, 1348]
+	Open			on
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -1324,7 +1324,7 @@ Model {
 	  MaskHideContents	  off
 	  System {
 	    Name		    "Elbow Joint Limits"
-	    Location		    [2140, 24, 3847, 1240]
+	    Location		    [287, 123, 2042, 1447]
 	    Open		    on
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -1356,19 +1356,6 @@ Model {
 	      BackgroundColor	      "darkGreen"
 	      Port		      "2"
 	      IconDisplay	      "Port number"
-	    }
-	    Block {
-	      BlockType		      Gain
-	      Name		      "Gain1"
-	      SID		      "340"
-	      Position		      [515, 125, 545, 165]
-	      ZOrder		      7
-	      NamePlacement	      "alternate"
-	      ShowName		      off
-	      Gain		      "-1"
-	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Gain
@@ -1455,17 +1442,6 @@ Model {
 	    }
 	    Block {
 	      BlockType		      Mux
-	      Name		      "Mux1"
-	      SID		      "343"
-	      Ports		      [2, 1]
-	      Position		      [570, 31, 575, 184]
-	      ZOrder		      4
-	      ShowName		      off
-	      Inputs		      "2"
-	      DisplayOption	      "bar"
-	    }
-	    Block {
-	      BlockType		      Mux
 	      Name		      "Mux3"
 	      SID		      "150"
 	      Ports		      [2, 1]
@@ -1491,7 +1467,7 @@ Model {
 	      Position		      [620, 93, 855, 127]
 	      ZOrder		      3
 	      BackgroundColor	      "magenta"
-	      Expr		      " u(1)  *  (1-u(2)) * (u(2)<1) * (u(1)>0)"
+	      Expr		      " u(1)  * (u(1)>0)"
 	    }
 	    Block {
 	      BlockType		      Scope
@@ -1653,28 +1629,17 @@ Model {
 	      DstPort		      1
 	    }
 	    Line {
-	      SrcBlock		      "Mux1"
-	      SrcPort		      1
-	      DstBlock		      "Overextension Torque1"
-	      DstPort		      1
-	    }
-	    Line {
 	      SrcBlock		      "Gain5"
 	      SrcPort		      1
-	      DstBlock		      "Mux1"
+	      Points		      [78, 0; 0, 40]
+	      DstBlock		      "Overextension Torque1"
 	      DstPort		      1
 	    }
 	    Line {
 	      SrcBlock		      "dphi [rad/s]"
 	      SrcPort		      1
-	      Points		      [31, 0]
-	      Branch {
-		Points			[0, -350; 189, 0]
-	      }
-	      Branch {
-		DstBlock		"Gain4"
-		DstPort			1
-	      }
+	      DstBlock		      "Gain4"
+	      DstPort		      1
 	    }
 	    Line {
 	      SrcBlock		      "overextension angle1"
@@ -1710,17 +1675,6 @@ Model {
 	      SrcPort		      1
 	      DstBlock		      "Gain5"
 	      DstPort		      1
-	    }
-	    Line {
-	      Points		      [450, 220; 25, 0; 0, -75]
-	      DstBlock		      "Gain1"
-	      DstPort		      1
-	    }
-	    Line {
-	      SrcBlock		      "Gain1"
-	      SrcPort		      1
-	      DstBlock		      "Mux1"
-	      DstPort		      2
 	    }
 	    Line {
 	      SrcBlock		      "Overextension Torque1"
@@ -2019,7 +1973,7 @@ Model {
 	  MaskHideContents	  off
 	  System {
 	    Name		    "Subsystem"
-	    Location		    [2140, 24, 3847, 1240]
+	    Location		    [2092, 24, 3847, 1348]
 	    Open		    on
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -2356,8 +2310,8 @@ Model {
 	      ClassName		      "Ground"
 	      CoordPosition	      "[0 0 0]"
 	      CoordPositionUnits      "m"
-	      StateVectorMgrId	      "-1"
-	      MachineId		      "[0 0]"
+	      StateVectorMgrId	      "1"
+	      MachineId		      "[2 0]"
 	      ShowEnvPort	      on
 	    }
 	    Block {
@@ -3372,7 +3326,7 @@ Model {
 	  MaskHideContents	  off
 	  System {
 	    Name		    "VAS"
-	    Location		    [2140, 24, 3847, 1240]
+	    Location		    [2092, 24, 3847, 1348]
 	    Open		    on
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
